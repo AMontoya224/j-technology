@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/j-technology/static/css/main.ced4b126.css",
-    "main.js": "/j-technology/static/js/main.d4516ad2.js",
-    "static/media/mantenimiento.jpg": "/j-technology/static/media/mantenimiento.b52e50ba7995c83b13dc.jpg",
-    "static/media/emo_1.png": "/j-technology/static/media/emo_1.9fc7765416ec7391ab48.png",
-    "static/media/bg-robot.jpg": "/j-technology/static/media/bg-robot.60c22a93e26719fd9b9b.jpg",
-    "static/media/bg-tech.webp": "/j-technology/static/media/bg-tech.97b95425fea25f772339.webp",
-    "static/media/walle_1.jpg": "/j-technology/static/media/walle_1.1de4f6e1ef8b47897520.jpg",
-    "static/media/walle_2.jpg": "/j-technology/static/media/walle_2.15fb5e465f0c8f62e75d.jpg",
-    "static/media/emo_2.jpg": "/j-technology/static/media/emo_2.139edf545c93647b8f45.jpg",
-    "static/media/J-Tronics.png": "/j-technology/static/media/J-Tronics.3e70d763ce570d21c0be.png",
-    "static/media/asesoramiento.jpg": "/j-technology/static/media/asesoramiento.fb44f6a677b56f3537ec.jpg",
-    "static/media/Logo.png": "/j-technology/static/media/Logo.90ef9211b316bf3a22da.png",
-    "index.html": "/j-technology/index.html",
-    "main.ced4b126.css.map": "/j-technology/static/css/main.ced4b126.css.map",
-    "main.d4516ad2.js.map": "/j-technology/static/js/main.d4516ad2.js.map"
+    "main.css": "/static/css/main.ced4b126.css",
+    "main.js": "/static/js/main.e02f8da7.js",
+    "static/media/mantenimiento.jpg": "/static/media/mantenimiento.b52e50ba7995c83b13dc.jpg",
+    "static/media/emo_1.png": "/static/media/emo_1.9fc7765416ec7391ab48.png",
+    "static/media/bg-robot.jpg": "/static/media/bg-robot.60c22a93e26719fd9b9b.jpg",
+    "static/media/bg-tech.webp": "/static/media/bg-tech.97b95425fea25f772339.webp",
+    "static/media/walle_1.jpg": "/static/media/walle_1.1de4f6e1ef8b47897520.jpg",
+    "static/media/walle_2.jpg": "/static/media/walle_2.15fb5e465f0c8f62e75d.jpg",
+    "static/media/emo_2.jpg": "/static/media/emo_2.139edf545c93647b8f45.jpg",
+    "static/media/J-Tronics.png": "/static/media/J-Tronics.3e70d763ce570d21c0be.png",
+    "static/media/asesoramiento.jpg": "/static/media/asesoramiento.fb44f6a677b56f3537ec.jpg",
+    "static/media/Logo.png": "/static/media/Logo.90ef9211b316bf3a22da.png",
+    "index.html": "/index.html",
+    "main.ced4b126.css.map": "/static/css/main.ced4b126.css.map",
+    "main.e02f8da7.js.map": "/static/js/main.e02f8da7.js.map"
   },
   "entrypoints": [
     "static/css/main.ced4b126.css",
-    "static/js/main.d4516ad2.js"
+    "static/js/main.e02f8da7.js"
   ]
 }
