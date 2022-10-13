@@ -1,0 +1,33 @@
+/* Service */
+.Services > main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Services > main > div{
+    background: rgb(52, 52, 52);
+    border-radius: 1rem;
+    width: 350px;
+    height: 450px;
+    margin: 2rem 5rem;
+    padding: 1rem;
+    opacity: 0.7;
+    cursor: pointer;
+    transition: all 350ms ease;
+}
+.Services > main > div:hover{
+    transform: scale(1.1);
+    opacity: 1;
+}
+
+.Services > main > div > img{
+    width: 330px;
+    height: 180px;
+}
+
+/* ServiceID */
+
+.ServiceID > main > img{
+    width: 50%;
+}
