@@ -30,7 +30,7 @@ function Home( props ) {
         </section>
         <section className='four' ref={testRef4} onMouseEnter={() => scrollSelect( '#4' )} onTouchStart={() => scrollSelect( '#4' )}>
           <p>ultima seccion</p>
-          <Footer selectLan={selectLan}/>
+          <Footer onSelectLeft={onSelectLeft} selectLan={selectLan} testRef1={testRef1}/>
         </section>
       </main>
     </div>

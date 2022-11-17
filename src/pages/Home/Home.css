@@ -14,16 +14,16 @@
     height: 100vh;
     scroll-snap-align: start;
 }
-.one{
-    background: rgb(164, 39, 39);
+.Home > main > .one{
+    background: rgb(74, 73, 73);
 }
-.two{
+.Home > main > .two{
     background: rgb(43, 181, 105);
 }
-.three{
+.Home > main > .three{
     background: rgb(42, 52, 154);
 }
-.four{
+.Home > main > .four{
     background: rgb(204, 190, 31);
     display: flex;
     flex-direction: column;

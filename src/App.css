@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@100;200;300;400;500;600;700;800;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Share+Tech&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Londrina+Outline&display=swap');
 
 /* ------------- ROOT VARIABLES ------------- */
 :root{
@@ -12,11 +13,12 @@
     --color-sucess-variant: #02666b;
     --color-warning: #ffbb55;
     --color-warning-variant: #dd9f41;
-    --color-white: #eee;
+    --color-white: rgb(231, 231, 231);
     --color-white-variant: rgb(145, 143, 143);
     --color-black: rgb(41, 41, 41);
     --color-black-variant: rgb(58, 58, 58);
-    --color-background: #071B35;
+    --color-background: #292a2d;
+    --color-background-variant: #3c4043;
 
     --box-shadow: inset 0 -1px 0 var(--color-dark-light);
 }
@@ -47,7 +49,7 @@ body{
     width: 100vw;
     height: 100vh;
     font-family: 'Roboto', sans-serif;
-    background: rgb(18, 18, 18);
+    background: var(--color-background);
     user-select: auto;
     overflow: auto;
     font-size: 1.6rem;

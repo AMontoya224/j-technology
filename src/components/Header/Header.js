@@ -90,10 +90,11 @@ function Header( props ) {
                             return(
                                 <div onClick={() => onPage(`/services/${idx+1}`)}>
                                     <p>{selectLan ? service.titleEn : service.title}</p>
-                                    <i>{selectLan ? `$ ${(service.price/3.99).toFixed(1)}` : `s/. ${service.price}`}</i>
+                                    <span class="material-icons-outlined">{service.icon}</span>
                                 </div>
                             )
                         })}
+                        <p onClick={() => onPage('/services')}>{selectLan ? 'All services...' : 'Todos los servicios...'}</p>
                     </div>
                 </div>
                 <div className='H-Products'>
@@ -105,10 +106,11 @@ function Header( props ) {
                             return(
                                 <div onClick={() => onPage(`/products/${idx+1}`)}>
                                     <p>{selectLan ? product.titleEn : product.title}</p>
-                                    <i>{selectLan ? `$ ${(product.price/3.99).toFixed(1)}` : `s/. ${product.price}`}</i>
+                                    <span class="material-icons-outlined">{product.icon}</span>
                                 </div>
                             )
                         })}
+                        <p onClick={() => onPage('/products')}>{selectLan ? 'All products...' : 'Todos los productos...'}</p>
                     </div>
                 </div>
                 <div className='H-About'>

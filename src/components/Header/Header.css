@@ -48,8 +48,13 @@
     cursor: pointer;
     transition: all 350ms ease;
 }
-.H-row > div:hover{
-    opacity: 0.7;
+
+.H-Products > p, .H-Services > p, .H-About > p{
+    border-bottom: 2px solid transparent;
+    transition: all 350ms ease;
+}
+.H-Products:hover > p, .H-Services:hover > p, .H-About:hover > p{
+    border-bottom: 2px solid var(--color-sucess);
 }
 
 .H-Products > .P-more, .H-Services > .P-more, .H-About > .P-more{
@@ -58,25 +63,24 @@
 .H-Products > .P-less, .H-Services > .P-less, .H-About > .P-less{
     display: none;
 }
-.H-Products > .P-menu, .H-Services > .P-menu, .H-About > .P-menu{
+.P-menu{
     display: none;
-    width: 180px;
+    width: 350px;
     padding-top: 2.5rem;
-    background: transparent;
     position: fixed;
     top: 5rem;
+    transform: translateX(-130px);
 }
-.H-Products > .P-menu > div, .H-Services > .P-menu > div, .H-About > .P-menu > p{
-    margin: 1.5rem 0.5rem;
-    border-radius: 0.5rem;
+.P-menu > div, .P-menu > p{
+    padding: 0.5rem 0 0.5rem 1rem;
     color: rgb(34, 34, 34);
     background: rgb(181, 176, 176);
-    opacity: 0.7;
+    opacity: 0.9;
     cursor: pointer;
     transition: all 350ms ease;
 }
-.H-Products > .P-menu > div:hover, .H-Services > .P-menu > div:hover, .H-About > .P-menu > p:hover{
-    opacity: 1;
+.P-menu > div:hover, .P-menu > p:hover{
+    opacity: 0.8;
 }
 .H-Products:hover > .P-more, .H-Services:hover > .P-more, .H-About:hover > .P-more{
     display: none;
@@ -86,6 +90,16 @@
 }
 .H-Products:hover > .P-menu, .H-Services:hover > .P-menu, .H-About:hover > .P-menu{
     display: inline;
+}
+
+.P-menu > div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.P-menu > div > span{
+    margin: 0 1rem;
 }
 
 .H-row > .L-btn{

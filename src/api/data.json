@@ -18,7 +18,8 @@
             ],
             "price": 5499.9,
             "stock": true,
-            "image": "asesoramiento.jpg"
+            "image": "asesoramiento.jpg",
+            "icon": "supervisor_account"
         },
         {
             "id": 1,
@@ -36,7 +37,8 @@
             ],
             "price": 1499.9,
             "stock": false,
-            "image": "mantenimiento.jpg"
+            "image": "mantenimiento.jpg",
+            "icon": "build"
         }
     ],
     "products": [
@@ -50,9 +52,25 @@
                 "4 servomotores",
                 "pantalla OLED",
                 "sensores de proximidad",
+                "microcontrolador Atmega 4",
+                "4 servomotores",
+                "pantalla OLED",
+                "sensores de proximidad",
+                "microcontrolador Atmega 4",
+                "4 servomotores",
+                "pantalla OLED",
+                "sensores de proximidad",
                 "microcontrolador Atmega 4"
             ],
             "featuresEn": [
+                "4 servo motors",
+                "OLED display",
+                "proximity sensors",
+                "Atmega 4 microcontroller",
+                "4 servo motors",
+                "OLED display",
+                "proximity sensors",
+                "Atmega 4 microcontroller",
                 "4 servo motors",
                 "OLED display",
                 "proximity sensors",
@@ -60,7 +78,9 @@
             ],
             "price": 749.9,
             "stock": true,
-            "image": "robotDIY.jpg"
+            "image": "diy.webp",
+            "image2": "diy.webp",
+            "icon": "android"
         },
         {
             "id": 1,
@@ -84,7 +104,9 @@
             ],
             "price": 999.9,
             "stock": true,
-            "image": "robotEMOT.jpg"
+            "image": "emo_1.png",
+            "image2": "emo_1.png",
+            "icon": "smart_toy"
         },
         {
             "id": 2,
@@ -104,7 +126,9 @@
             ],
             "price": 39.9,
             "stock": true,
-            "image": "robotFly.jpg"
+            "image": "mosquito.jpg",
+            "image2": "mosquito.jpg",
+            "icon": "bug_report"
         },
         {
             "id": 3,
@@ -126,7 +150,31 @@
             ],
             "price": 59.9,
             "stock": false,
-            "image": "robotFly.jpg"
+            "image": "walle_1.jpg",
+            "image2": "walle_1.jpg",
+            "icon": "adb"
+        },
+        {
+            "id": 4,
+            "title": "Brazo robótico",
+            "titleEn": "Arm robotic",
+            "description": "Brazo robótico interactivo para que puedan aprender conceptos de robótica y control",
+            "descriptionEn": "Interactive robot and attractive design with movement for children to learn.",
+            "features": [
+                "5 grados de libertad",
+                "Chasis liviano y modular",
+                "bateria con duración de 1h."
+            ],
+            "featuresEn": [
+                "4 degrees of freedom",
+                "Light and modular chassis",
+                "battery lasting 1 hour."
+            ],
+            "price": 1200,
+            "stock": false,
+            "image": "arm_1.svg",
+            "image2": "arm_2.jpeg",
+            "icon": "precision_manufacturing"
         }
     ]
 }

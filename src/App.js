@@ -46,9 +46,9 @@ function App() {
         <Header onSelectLeft={onSelectLeft} testRef1={testRef1} selectLan={selectLan} onSelectLan={onSelectLan} data={Data}/>
         <Switch>
           <Route exact path="/" render={ routeProps => <Home onSelectLeft={onSelectLeft} selectLeft={selectLeft} testRef1={testRef1} testRef2={testRef2} testRef3={testRef3} testRef4={testRef4} selectLan={selectLan} {...routeProps} />}/>
-          <Route exact path="/services" render={ routeProps => <Services onSelectLeft={onSelectLeft} selectLeft={selectLeft} testRef1={testRef1} data={Data} {...routeProps} />}/>
+          <Route exact path="/services" render={ routeProps => <Services onSelectLeft={onSelectLeft} selectLeft={selectLeft} testRef1={testRef1} selectLan={selectLan} data={Data} {...routeProps} />}/>
           <Route exact path="/services/:_id" render={ routeProps => <ServiceID onSelectLeft={onSelectLeft} selectLeft={selectLeft} testRef1={testRef1} testRef2={testRef2} testRef3={testRef3} testRef4={testRef4} selectLan={selectLan} data={Data} {...routeProps} />}/>
-          <Route exact path="/products" render={ routeProps => <Products onSelectLeft={onSelectLeft} selectLeft={selectLeft} testRef1={testRef1} data={Data} {...routeProps} />}/>
+          <Route exact path="/products" render={ routeProps => <Products onSelectLeft={onSelectLeft} selectLeft={selectLeft} testRef1={testRef1} selectLan={selectLan} data={Data} {...routeProps} />}/>
           <Route exact path="/products/:_id" render={ routeProps => <ProductID onSelectLeft={onSelectLeft} selectLeft={selectLeft} testRef1={testRef1} testRef2={testRef2} testRef3={testRef3} testRef4={testRef4} selectLan={selectLan} data={Data} {...routeProps} />}/>
           <Route exact path="/about-us" render={ routeProps => <AboutUs onSelectLeft={onSelectLeft} selectLeft={selectLeft} testRef1={testRef1} testRef2={testRef2} testRef3={testRef3} testRef4={testRef4} selectLan={selectLan} {...routeProps} />}/>
           <Route exact path="/our-method" render={ routeProps => <OurMethod onSelectLeft={onSelectLeft} selectLeft={selectLeft} testRef1={testRef1} testRef2={testRef2} testRef3={testRef3} testRef4={testRef4} selectLan={selectLan} {...routeProps} />}/>
