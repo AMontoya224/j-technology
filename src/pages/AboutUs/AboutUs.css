@@ -1,0 +1,106 @@
+/*About Us*/
+.AboutUs{
+   
+    height: 100vh;
+}
+
+.AboutUs > main{
+    margin: 10rem 3.5rem 5rem 3.5rem;
+    display: flex;
+    height: 55vh;
+    justify-content: space-between;
+}
+
+.AboutUs > main > div{
+    flex: 1;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+    transition: all 350ms ease;
+    border: 1px solid var(--color-white);
+}
+.AboutUs > main > div:hover{
+    flex: 4;
+    background: var(--color-background-variant);
+}
+
+.AboutUs > main > .one{
+    border-radius: 1rem 0 0 1rem;
+}
+
+.AboutUs > main > .two{
+    border-radius: 0 1rem 1rem 0;
+}
+
+.AboutUs > main > div > h1{
+    font-size: 4rem;
+    margin: 0 auto;
+    transition: all 350ms ease;
+}
+.AboutUs > main > div:hover > h1{
+    color: var(--color-sucess);
+    font-size: 6rem;
+}
+
+.AboutUs > main > div > button{
+    color: var(--color-white);
+    background: var(--color-sucess);
+    border: none;
+    border-radius: 1rem;
+    font-size: 1.6rem;
+    padding: 1.5rem 2rem;
+    cursor: pointer;
+    transition: all 350ms ease;
+    background: var(--color-sucess);
+}
+.AboutUs > main > div > button:hover{
+    background: var(--color-sucess-variant);
+}
+
+/*Know Us*/
+.KnowUs > main{
+    height: 100vh;
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+}
+
+.KnowUs > main > section{
+    padding: 10rem 3.5rem 0 12rem;
+    height: 100vh;
+    scroll-snap-align: start;
+    display: flex;
+    flex-direction: column;
+    justify-content:baseline;
+    align-items: left;
+}
+
+.KnowUs > main > .one{
+    background: rgb(74, 73, 73);
+}
+
+.KnowUs > main > .four{
+    background: rgb(133, 132, 132);
+}
+
+.KnowUs > main > .four > Footer{
+    margin-left: -12rem;
+    width: 100vw;
+}
+
+/*Our Method*/
+
+
+/*Cell phone*/
+@media only screen and (max-width: 960px){
+    .KnowUs > main > section{
+        padding: 9.5rem 2rem 9.5rem 2rem;
+    }
+
+    .KnowUs > main > .four{
+        padding-bottom: 0;
+    }
+}

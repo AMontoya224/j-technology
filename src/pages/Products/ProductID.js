@@ -1,5 +1,6 @@
 import React from 'react';
 import {withRouter} from 'react-router-dom';
+import Contact from '../../components/Contact/Contact';
 import Footer from '../../components/Footer/Footer';
 import Left from '../../components/Left/Left';
 
@@ -31,10 +32,10 @@ function ProductID( props ) {
           <p>arm</p>
           <img src={require(`../../images/${product.image2}`)} alt={product.titleEn}/>
           <div>
-            <h1>dssdsdsdssssssdssdsdsdssssssssdsssssdsdsdsdsssss</h1>
-            <p>dssdsdsdssssssdssdsdsdssssssssdsssssdsdsdsdsssss</p>
-            <p>dssdsdsdssssssdssdsdsdssssssssdsssssdsdsdsdsssss</p>
-            <p>dssdsdsdssssssdssdsdsdssssssssdsssssdsdsdsdsssss</p>
+            <h1>dssdsdsdss ssssdssdsdsd ssssssssds ssssdsdsdsdsssss</h1>
+            <p>dssdsd sdsss sssdssdsd sdssssssss dsssssds dsdsdsssss</p>
+            <p>dssd sdsdssssssd ssdsdsds sssssssd sssssdsdsd sdsssss</p>
+            <p>dssdsdsd ssssssdss dsdsdssssss ssdsssssdsd sdsdsssss</p>
           </div>
         </section>
         <section className='three' ref={testRef3} onMouseEnter={() => scrollSelect( '#3' )} onTouchStart={() => scrollSelect( '#3' )}>
@@ -82,14 +83,18 @@ function ProductID( props ) {
                   <img src={require(`../../images/vid_3.jpg`)} alt={product.titleEn}/>
                   <img src={require(`../../images/vid_4.jpg`)} alt={product.titleEn}/>
                   <img src={require(`../../images/vid_5.jpg`)} alt={product.titleEn}/>
+                  <img src={require(`../../images/vid_1.jpg`)} alt={product.titleEn}/>
+                  <img src={require(`../../images/vid_2.jpg`)} alt={product.titleEn}/>
+                  <img src={require(`../../images/vid_3.jpg`)} alt={product.titleEn}/>
+                  <img src={require(`../../images/vid_4.jpg`)} alt={product.titleEn}/>
+                  <img src={require(`../../images/vid_5.jpg`)} alt={product.titleEn}/>
                 </div>
               </li>
             </ul>
           </nav>
         </section>
         <section className='four' ref={testRef4} onMouseEnter={() => scrollSelect( '#4' )} onTouchStart={() => scrollSelect( '#4' )}>
-          <p>ultima seccion</p>
-          <img src={require(`../../images/borrar_1.jpg`)} alt={product.titleEn}/>
+          <Contact selectLan={selectLan}/>
           <Footer onSelectLeft={onSelectLeft} selectLan={selectLan} testRef1={testRef1}/>
         </section>
       </main>

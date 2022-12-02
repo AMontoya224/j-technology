@@ -118,7 +118,7 @@ function Header( props ) {
                     <span className="material-icons-round P-more">expand_more</span>
                     <span className="material-icons-round P-less">expand_less</span>
                     <div className='P-menu'>
-                        <p onClick={() => onPage('/about-us')}>{selectLan ? 'About us' : 'Conócenos'}</p>
+                        <p onClick={() => onPage('/know-us')}>{selectLan ? 'Know us' : 'Conócenos'}</p>
                         <p onClick={() => onPage('/our-method')}>{selectLan ? 'Our method' : 'Nuestro método'}</p>
                     </div>
                 </div>
@@ -164,7 +164,7 @@ function Header( props ) {
                         <span className="material-icons-round" onClick={onBtnAbout}>{btnAbout ? 'expand_less' : 'expand_more'}</span>
                     </div>
                     <div className='P-menu'>
-                        <p onClick={() => onPageX('/about-us')}>{selectLan ? 'About us' : 'Conócenos'}</p>
+                        <p onClick={() => onPageX('/know-us')}>{selectLan ? 'Know us' : 'Conócenos'}</p>
                         <p onClick={() => onPageX('/our-method')}>{selectLan ? 'Our method' : 'Nuestro método'}</p>
                     </div>
                 </div>

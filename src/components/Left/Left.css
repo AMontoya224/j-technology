@@ -59,7 +59,7 @@
 @media only screen and (max-width: 960px){
     .Left{
         height: 90vh;
-        transform: translateY(5vh) translateX(10vw) rotateZ(-90deg);
+        transform: translateY(5vh) translateX(6vw) rotateZ(-90deg);
         top: 43%;
     }
 

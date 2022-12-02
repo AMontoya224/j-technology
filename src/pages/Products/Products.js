@@ -14,9 +14,11 @@ function Products( props ) {
 
   return (
     <div className="Products">
-      <title>{selectLan ? 'Products' : 'Productos'} | J-Technology</title>
-      <h1>{selectLan ? 'Products' : 'Productos'}</h1>
+      <head>
+        <title>{selectLan ? 'Products' : 'Productos'} | J-Technology</title>
+      </head>
       <main>
+        <h1>{selectLan ? 'Products' : 'Productos'}</h1>
         {data.products.map( ( product, idx ) => {
           return(
             <div onClick={() => onPage(`/Products/${idx+1}`)}>
@@ -28,7 +30,9 @@ function Products( props ) {
           )
         })}
       </main>
-      <Footer onSelectLeft={onSelectLeft} selectLan={selectLan} testRef1={testRef1}/>
+      <div>
+        <Footer onSelectLeft={onSelectLeft} selectLan={selectLan} testRef1={testRef1}/>
+      </div>
     </div>
   );
 }

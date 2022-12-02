@@ -66,9 +66,9 @@
 .P-menu{
     display: none;
     width: 350px;
-    padding-top: 2.5rem;
+    padding-top: 1.5rem;
     position: fixed;
-    top: 5rem;
+    top: 6rem;
     transform: translateX(-130px);
 }
 .P-menu > div, .P-menu > p{
