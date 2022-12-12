@@ -1,3 +1,4 @@
+/*Contact*/
 .Contact{
     display: flex;
     flex-direction: column;
@@ -156,6 +157,12 @@
     background: var(--color-sucess-variant);
     cursor: default;
 }
+
+/*Contact Story*/
+
+
+/*Contact Service*/
+
 
 @media only screen and (max-width: 960px){
     .Contact > h1{

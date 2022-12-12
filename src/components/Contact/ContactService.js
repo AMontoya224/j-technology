@@ -4,7 +4,7 @@ import emailjs from 'emailjs-com';
 import './Contact.css';
 
 
-function Contact( props ) {
+function ContactService( props ) {
     const { selectLan } = props;
     const frmContact = { service:'News', userEmail:'', first_name:'', last_name:'', organization:'', message:'' };
     const emailRegex = /^[-\w.%+]{1,64}@(?:[A-Z0-9-]{1,63}\.){1,125}[A-Z]{2,63}$/i;
@@ -32,7 +32,7 @@ function Contact( props ) {
     }
 
     return (
-        <div className="Contact">
+        <div className="ContactService">
             <h1>{selectLan ? 'Connect with us' : 'Conecta con nosotros'}</h1>
             <div>
                 <div>
@@ -62,4 +62,4 @@ function Contact( props ) {
     );
 }
 
-export default withRouter( Contact );
+export default withRouter( ContactService );

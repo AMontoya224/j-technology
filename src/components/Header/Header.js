@@ -79,7 +79,7 @@ function Header( props ) {
     return (
         <div className="Header">
             <div className='H-row'>
-                <p onClick={onHome}><img src={logo} alt='logo'/><b>J</b>-TECHNOLOGY</p>
+                <p onClick={onHome}><img src={logo} alt='logo'/>  J  T  <c>|</c><b>≡</b>C  H</p>
                 <div> </div>
                 <div className='H-Services'>
                     <p onClick={() => onPage('/services')}>{selectLan ? 'Services ' : 'Servicios '}</p>
