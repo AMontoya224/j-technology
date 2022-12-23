@@ -6,13 +6,9 @@ import Left from '../../components/Left/Left';
 
 
 function ProductID( props ) {
-  const { selectLeft, onSelectLeft, testRef1, testRef2, testRef3, testRef4, selectLan, data } = props;
+  const { selectLeft, scrollSelect, onSelectLeft, testRef1, testRef2, testRef3, testRef4, selectLan, data } = props;
   const product = data.products[props.match.params._id-1];
   const url = props.location.hash;
-
-  const scrollSelect = ( select ) => {
-    onSelectLeft( select );
-  };
 
   return (
     <div className="ProductID">

@@ -17,6 +17,7 @@ import OurMethod from './pages/AboutUs/OurMethod';
 function App() {
   const [selectLeft, setSelectLeft] = useState( '#1' );
   const [selectLan, setSelectLan] = useState( false );
+  const [selectHidden, setSelectHidden] = useState( false );
   const [data, setData] = useState( false );
   const testRef1 = useRef( null );
   const testRef2 = useRef( null );
@@ -31,6 +32,16 @@ function App() {
     setSelectLan( newSelect );
   };
 
+  const scrollSelect = ( select ) => {
+    onSelectLeft( select );
+    if(select === '#1' ){
+      setSelectHidden( false )
+    }
+    else{
+      setSelectHidden( true )
+    }
+  };
+
   useEffect( ()=>{
     axios.get( 'https://api.npoint.io/af96496d273fd87d4e91' )
       .then( res=>{
@@ -43,16 +54,17 @@ function App() {
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"></link>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet"></link>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet"></link>
+    <script defer src='https://app.embed.im/snow.js'></script>
     <BrowserRouter>
-      <Header onSelectLeft={onSelectLeft} testRef1={testRef1} selectLan={selectLan} onSelectLan={onSelectLan} data={data}/>
+      <Header onSelectLeft={onSelectLeft} testRef1={testRef1} selectLan={selectLan} onSelectLan={onSelectLan} selectHidden={selectHidden} data={data}/>
       <Switch>
-        <Route exact path="/" render={ routeProps => <Home onSelectLeft={onSelectLeft} selectLeft={selectLeft} testRef1={testRef1} testRef2={testRef2} testRef3={testRef3} testRef4={testRef4} selectLan={selectLan} {...routeProps} />}/>
+        <Route exact path="/" render={ routeProps => <Home onSelectLeft={onSelectLeft} scrollSelect={scrollSelect} selectLeft={selectLeft} testRef1={testRef1} testRef2={testRef2} testRef3={testRef3} testRef4={testRef4} selectLan={selectLan} setSelectHidden={setSelectHidden} {...routeProps} />}/>
         <Route exact path="/services" render={ routeProps => <Services onSelectLeft={onSelectLeft} selectLeft={selectLeft} testRef1={testRef1} selectLan={selectLan} data={data} {...routeProps} />}/>
-        <Route exact path="/services/:_id" render={ routeProps => <ServiceID onSelectLeft={onSelectLeft} selectLeft={selectLeft} testRef1={testRef1} testRef2={testRef2} testRef3={testRef3} testRef4={testRef4} selectLan={selectLan} data={data} {...routeProps} />}/>
+        <Route exact path="/services/:_id" render={ routeProps => <ServiceID onSelectLeft={onSelectLeft} scrollSelect={scrollSelect} selectLeft={selectLeft} testRef1={testRef1} testRef2={testRef2} testRef3={testRef3} testRef4={testRef4} selectLan={selectLan} data={data} {...routeProps} />}/>
         <Route exact path="/products" render={ routeProps => <Products onSelectLeft={onSelectLeft} selectLeft={selectLeft} testRef1={testRef1} selectLan={selectLan} data={data} {...routeProps} />}/>
-        <Route exact path="/products/:_id" render={ routeProps => <ProductID onSelectLeft={onSelectLeft} selectLeft={selectLeft} testRef1={testRef1} testRef2={testRef2} testRef3={testRef3} testRef4={testRef4} selectLan={selectLan} data={data} {...routeProps} />}/>
+        <Route exact path="/products/:_id" render={ routeProps => <ProductID onSelectLeft={onSelectLeft} scrollSelect={scrollSelect} selectLeft={selectLeft} testRef1={testRef1} testRef2={testRef2} testRef3={testRef3} testRef4={testRef4} selectLan={selectLan} data={data} {...routeProps} />}/>
         <Route exact path="/about-us" render={ routeProps => <AboutUs onSelectLeft={onSelectLeft} selectLeft={selectLeft} testRef1={testRef1} selectLan={selectLan} {...routeProps}/>}/>
-        <Route exact path="/know-us" render={ routeProps => <KnowUs  onSelectLeft={onSelectLeft} selectLeft={selectLeft} testRef1={testRef1} testRef2={testRef2} testRef3={testRef3} testRef4={testRef4} selectLan={selectLan} {...routeProps} />}/>
+        <Route exact path="/know-us" render={ routeProps => <KnowUs  onSelectLeft={onSelectLeft} scrollSelect={scrollSelect} selectLeft={selectLeft} testRef1={testRef1} testRef2={testRef2} testRef3={testRef3} testRef4={testRef4} selectLan={selectLan} {...routeProps} />}/>
         <Route exact path="/our-method" render={ routeProps => <OurMethod onSelectLeft={onSelectLeft} selectLeft={selectLeft} testRef1={testRef1} testRef2={testRef2} testRef3={testRef3} testRef4={testRef4} selectLan={selectLan} {...routeProps} />}/>
       </Switch>
     </BrowserRouter>

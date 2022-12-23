@@ -5,7 +5,7 @@ import logo from './../../images/Logo.png'
 
 
 function Header( props ) {
-    const { onSelectLeft, testRef1, selectLan, onSelectLan, data } = props;
+    const { onSelectLeft, testRef1, selectLan, onSelectLan, selectHidden, data } = props;
     const [btnEsc, setBtnEsc] = useState( false );
     const [btnProducts, setBtnProducts] = useState( false );
     const [btnServices, setBtnServices] = useState( false );
@@ -78,7 +78,7 @@ function Header( props ) {
 
     return (
         <div className="Header">
-            <div className='H-row'>
+            <div className={selectHidden ? 'H-row bottom' : 'H-row top'}>
                 <p onClick={onHome}><img src={logo} alt='logo'/>  J  T  <c>|</c><b>≡</b>C  H</p>
                 <div> </div>
                 <div className='H-Services'>

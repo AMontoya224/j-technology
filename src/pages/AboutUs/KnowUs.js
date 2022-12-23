@@ -7,11 +7,7 @@ import Footer from '../../components/Footer/Footer';
 
 
 function KnowUs( props ) {
-  const { selectLeft, onSelectLeft, testRef1, testRef2, testRef4, selectLan } = props;
-
-  const scrollSelect = ( select ) => {
-    onSelectLeft( select );
-  };
+  const { selectLeft, scrollSelect, onSelectLeft, testRef1, testRef2, testRef4, selectLan } = props;
 
   return (
     <div className="KnowUs">
