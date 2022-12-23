@@ -273,6 +273,15 @@
     .H-row > .H-Services{
         display: none;
     }
+
+    .whatsapp{
+        right: 1vh;
+        top: 80vh;
+    }
+    
+    .whatsapp > img{
+        width: 50px;
+    }
 }
 
 
