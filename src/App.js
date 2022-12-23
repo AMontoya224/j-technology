@@ -54,7 +54,6 @@ function App() {
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"></link>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet"></link>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet"></link>
-    <script defer src='https://app.embed.im/snow.js'></script>
     <BrowserRouter>
       <Header onSelectLeft={onSelectLeft} testRef1={testRef1} selectLan={selectLan} onSelectLan={onSelectLan} selectHidden={selectHidden} data={data}/>
       <Switch>

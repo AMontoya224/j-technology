@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { withRouter } from 'react-router-dom';
 import './Header.css';
 import logo from './../../images/Logo.png'
+import gorro from './../../images/gorro.png'
 
 
 function Header( props ) {
@@ -80,6 +81,7 @@ function Header( props ) {
         <div className="Header">
             <div className={selectHidden ? 'H-row bottom' : 'H-row top'}>
                 <p onClick={onHome}><img src={logo} alt='logo'/>  J  T  <c>|</c><b>≡</b>C  H</p>
+                <img src={gorro} alt='gorro'/>
                 <div> </div>
                 <div className='H-Services'>
                     <p onClick={() => onPage('/services')}>{selectLan ? 'Services ' : 'Servicios '}</p>

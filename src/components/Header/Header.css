@@ -72,6 +72,14 @@
     transition: all 350ms ease;
 }
 
+.H-row > img{
+    width: 50px;
+    position: absolute;
+    left: 14.8rem;
+    bottom: 4.5rem;
+    transform: rotate(-10deg)
+}
+
 .H-Products > p, .H-Services > p, .H-About > p{
     border-bottom: 2px solid transparent;
     transition: all 350ms ease;

@@ -36,9 +36,9 @@ function Left( props ) {
             </div>
             <div>
                 <div className={(selectLeft === '#1' ) ? 'L-scroll' : 'L-scroll active' }>
-                    <p>SCROLLDOWN</p>
-                <div></div>
-            </div>
+                    <p onClick={scrollToElement2}>SCROLLDOWN</p>
+                    <div></div>
+                </div>
             </div>
         </div>
     );
