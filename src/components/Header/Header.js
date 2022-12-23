@@ -3,6 +3,7 @@ import { withRouter } from 'react-router-dom';
 import './Header.css';
 import logo from './../../images/Logo.png'
 import gorro from './../../images/gorro.png'
+import whatsapp from './../../images/whatsapp.png'
 
 
 function Header( props ) {
@@ -172,6 +173,9 @@ function Header( props ) {
                 </div>
                 <button className='L-btn' onClick={onBtnLan}><span className="material-icons-round">translate</span><p>{selectLan ? 'English' : 'Español'}</p></button>
             </div>
+            <a className="whatsapp" href="https://wa.me/51953269019/?text=Hola%20quiero%20hacer%20un%20pedido" target="_blank" rel="noreferrer">
+                <img src={whatsapp} alt='whatsapp'/>
+            </a>
         </div>
     );
 }
