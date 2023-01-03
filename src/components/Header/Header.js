@@ -132,7 +132,7 @@ function Header( props ) {
                 <div className={btnServices ? 'M-Services' : 'M-Services active'}>
                     <div>
                         <p onClick={() => onPageX('/services')}>{selectLan ? 'Services ' : 'Servicios '}</p>
-                        <span className="material-icons-round" onClick={onBtnServices}>{btnServices ? 'expand_less' : 'expand_more'}</span>
+                        {/*<span className="material-icons-round" onClick={onBtnServices}>{btnServices ? 'expand_less' : 'expand_more'}</span>*/}
                     </div>
                     <div className='P-menu'>
                         {data.services.map( ( service, idx ) => {
@@ -148,7 +148,7 @@ function Header( props ) {
                 <div className={btnProducts ? 'M-Products' : 'M-Products active'}>
                     <div>
                         <p onClick={() => onPageX('/products')}>{selectLan ? 'Products ' : 'Productos '}</p>
-                        <span className="material-icons-round" onClick={onBtnProducts}>{btnProducts ? 'expand_less' : 'expand_more'}</span>
+                        {/*<span className="material-icons-round" onClick={onBtnProducts}>{btnProducts ? 'expand_less' : 'expand_more'}</span>*/}
                     </div>
                     <div className='P-menu'>
                         {data.products.map( ( product, idx ) => {
@@ -164,7 +164,7 @@ function Header( props ) {
                 <div className={btnAbout ? 'M-About' : 'M-About active'}>
                     <div>
                         <p onClick={() => onPageX('/about-us')}>{selectLan ? 'About us ' : 'Sobre nosotros '}</p>
-                        <span className="material-icons-round" onClick={onBtnAbout}>{btnAbout ? 'expand_less' : 'expand_more'}</span>
+                        {/*<span className="material-icons-round" onClick={onBtnAbout}>{btnAbout ? 'expand_less' : 'expand_more'}</span>*/}
                     </div>
                     <div className='P-menu'>
                         <p onClick={() => onPageX('/know-us')}>{selectLan ? 'Know us' : 'Conócenos'}</p>

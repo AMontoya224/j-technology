@@ -41,6 +41,7 @@
     color: var(--color-white);
     cursor: pointer;
     transition: all 350ms ease;
+    z-index: 2;
 }
 .H-row > p:hover{
     opacity: 0.7;
@@ -81,13 +82,20 @@
 }
 
 .H-Products > p, .H-Services > p, .H-About > p{
-    border-bottom: 2px solid transparent;
+    /*border-bottom: 2px solid transparent;*/
     transition: all 350ms ease;
 }
 .H-Products:hover > p, .H-Services:hover > p, .H-About:hover > p{
-    border-bottom: 2px solid var(--color-sucess);
+    /*border-bottom: 2px solid var(--color-sucess);*/
+    color: var(--color-sucess);
 }
 
+.H-Products > span, .H-Services > span, .H-About > span{
+    color: var(--color-sucess);
+}
+.H-Products:hover > span, .H-Services:hover > span, .H-About:hover > span{
+    color: transparent;
+}
 .H-Products > .P-more, .H-Services > .P-more, .H-About > .P-more{
     display: inline;
 }
@@ -112,6 +120,8 @@
 }
 .P-menu > div:hover, .P-menu > p:hover{
     opacity: 0.8;
+    background: var(--color-sucess-variant);
+    color: var(--color-white);
 }
 .H-Products:hover > .P-more, .H-Services:hover > .P-more, .H-About:hover > .P-more{
     display: none;
@@ -162,8 +172,8 @@
     border: none;
     background: transparent;
     cursor: pointer;
-    z-index: 4;
     transition: all 350ms ease;
+    z-index: 2;
 }
 .H-btn:hover{
     opacity: 0.7;
@@ -228,12 +238,12 @@
 
 .whatsapp{
     position: absolute;
-    right: 1vh;
-    top: 88vh;
+    right: 2rem;
+    top: 90vh;
 }
 
 .whatsapp > img{
-    width: 60px;
+    width: 50px;
     opacity: 0.6;
     cursor: pointer;
     transition: all 350ms ease;
@@ -242,64 +252,22 @@
     opacity: 0.9;
 }
 
-@media only screen and (max-width: 960px){
-    .H-btn{
-        display: flex;
-    }
-
-    .H-row{
-        padding: 2rem 1.5rem;
-    }
-
-    .H-row > .H-About{
-        display: none;
-    }
-
-    .H-row > .L-btn{
-        display: none;
-    }
-
-    .H-row > p{
-        font-size: 2rem;
-        flex: 10;
-    }
-}
-
-@media only screen and (max-width: 600px){
-    .H-row > .H-Products{
-        display: none;
-    }
-
-    .H-row > .H-Services{
-        display: none;
-    }
-
-    .whatsapp{
-        right: 1vh;
-        top: 80vh;
-    }
-    
-    .whatsapp > img{
-        width: 50px;
-    }
-}
-
-
 .menu > .L-btn{
     background: transparent;
     color: white;
 }
 
 .menu{
-    padding-top: 10vh;
+    padding-top: 20vh;
     position: fixed;
     top: 0;
     left: 0;
     width: 100vw;
     height: 100%;
-    background: rgb(136,16,25);
-    background: linear-gradient(90deg, rgba(136,16,25,1) 0%, rgba(99,10,16,1) 50%, rgba(60,5,9,1) 100%);
-    z-index: 3;
+    color: transparent;
+    background: rgb(12,157,92);
+    background: linear-gradient(144deg, rgba(12,157,92,1) 0%, rgba(13,180,105,1) 29%, rgba(11,198,114,1) 75%, rgba(10,226,129,1) 100%);
+    z-index: -1;
 }
 .menu-fw{
     display: flex;
@@ -317,7 +285,6 @@
 .menu-p{
     display: block;
     margin: 2.5rem auto;
-    font-size: 9rem;
     color: var(--color-white);
     background: transparent;
     border: none;
@@ -365,6 +332,11 @@
     opacity: 0.8;
 }
 
+.menu > div > div > p{
+    font-size: 4rem;
+    margin: 2rem;
+}
+
 @keyframes slide-bottom-fw{
     0% {
         -webkit-transform: translateY(-100vh);
@@ -410,12 +382,29 @@
 }
 
 @media only screen and (max-width: 960px){
-    .Header > .H-row > a, .Header > .H-row > .L-btn{
-        visibility: hidden;
+    .H-btn{
+        display: flex;
     }
 
-    .menu{
-        padding-top: 10vh;
+    .H-row{
+        padding: 2rem 1.5rem;
+    }
+
+    .H-row > .H-About{
+        display: none;
+    }
+
+    .H-row > .L-btn{
+        display: none;
+    }
+
+    .H-row > p{
+        font-size: 2rem;
+        flex: 10;
+    }
+
+    .Header > .H-row > a, .Header > .H-row > .L-btn{
+        visibility: hidden;
     }
 
     .menu > div{
@@ -424,5 +413,26 @@
 
     .menu-p{
         font-size: 10vh;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .H-row > .H-Products{
+        display: none;
+    }
+
+    .H-row > .H-Services{
+        display: none;
+    }
+
+    .whatsapp{
+        right: 1vh;
+        top: 82vh;
+        opacity: 0.6;
+    }
+
+    .H-row > img{
+        width: 40px;
+        left: 10rem;
     }
 }

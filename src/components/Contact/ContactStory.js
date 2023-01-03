@@ -86,8 +86,8 @@ function ContactStory( props ) {
                                 <p className='inp-error'>{error.message}</p>
                             </label>
                         </div>
-                        <button type={( contact.userEmail.length.length < 1 || updateError.length > 1 ) ? 'reset' : 'submit'}
-                                className={( contact.userEmail.length < 1 || updateError.length > 1 ) ? 'submit not-submit' : 'submit'}>
+                        <button type={( contact.userEmail.length < 1 || error.length > 1 ) ? 'reset' : 'submit'}
+                                className={( contact.userEmail.length < 1 || error.length > 1 ) ? 'submit not-submit' : 'submit'}>
                             <span className="material-icons-outlined">keyboard_return</span>
                         </button>
                     </form>
