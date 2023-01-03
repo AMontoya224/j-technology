@@ -1,14 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.b7646cc7.css",
-    "main.js": "/static/js/main.b23041c0.js",
+    "main.css": "/static/css/main.c246cd62.css",
+    "main.js": "/static/js/main.521f37d9.js",
     "static/media/emo_1.png": "/static/media/emo_1.9fc7765416ec7391ab48.png",
     "static/media/bg-robot.jpg": "/static/media/bg-robot.60c22a93e26719fd9b9b.jpg",
     "static/media/arm_1.svg": "/static/media/arm_1.a0d3fd96adf900602fef.svg",
+    "static/media/SUP-9G-Formatos-Innovadores.docx": "/static/media/SUP-9G-Formatos-Innovadores.40fd784649c87e2e0c94.docx",
     "static/media/mantenimiento.png": "/static/media/mantenimiento.101c51610d50751e3990.png",
     "static/media/walle_1.png": "/static/media/walle_1.f95d24cc0233c4034e2d.png",
     "static/media/bg-tech.webp": "/static/media/bg-tech.97b95425fea25f772339.webp",
     "static/media/mosquito.png": "/static/media/mosquito.f4f638375ca7fa1b861a.png",
+    "static/media/Formato Presupuesto SUP 9G Dinamicos.xlsx": "/static/media/Formato Presupuesto SUP 9G Dinamicos.4869b080fad02a8ff866.xlsx",
     "static/media/walle_2.jpg": "/static/media/walle_2.15fb5e465f0c8f62e75d.jpg",
     "static/media/emo_2.jpg": "/static/media/emo_2.139edf545c93647b8f45.jpg",
     "static/media/arm_2.jpeg": "/static/media/arm_2.4b46f4680c1cf6b64003.jpeg",
@@ -24,12 +26,14 @@
     "static/media/asesoramiento.jpg": "/static/media/asesoramiento.fb44f6a677b56f3537ec.jpg",
     "static/media/vid_5.jpg": "/static/media/vid_5.eb32d629df742294a5e4.jpg",
     "static/media/Logo.png": "/static/media/Logo.90ef9211b316bf3a22da.png",
+    "static/media/logo_2.svg": "/static/media/logo_2.34bcec8d632e8c654c530b1b14e4a6ae.svg",
+    "static/media/logo_1.svg": "/static/media/logo_1.2543882bcdf47939940fd423fda7a71f.svg",
     "index.html": "/index.html",
-    "main.b7646cc7.css.map": "/static/css/main.b7646cc7.css.map",
-    "main.b23041c0.js.map": "/static/js/main.b23041c0.js.map"
+    "main.c246cd62.css.map": "/static/css/main.c246cd62.css.map",
+    "main.521f37d9.js.map": "/static/js/main.521f37d9.js.map"
   },
   "entrypoints": [
-    "static/css/main.b7646cc7.css",
-    "static/js/main.b23041c0.js"
+    "static/css/main.c246cd62.css",
+    "static/js/main.521f37d9.js"
   ]
 }
