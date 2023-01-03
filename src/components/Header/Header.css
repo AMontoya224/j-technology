@@ -265,8 +265,8 @@
     width: 100vw;
     height: 100%;
     color: transparent;
-    background: rgb(12,157,92);
-    background: linear-gradient(144deg, rgba(12,157,92,1) 0%, rgba(13,180,105,1) 29%, rgba(11,198,114,1) 75%, rgba(10,226,129,1) 100%);
+    background: rgb(17,199,207);
+    background: linear-gradient(144deg, rgba(17,199,207,1) 0%, rgba(13,182,189,1) 29%, rgba(5,118,122,1) 75%, rgba(2,80,83,1) 100%);
     z-index: -1;
 }
 .menu-fw{
