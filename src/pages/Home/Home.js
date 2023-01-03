@@ -100,7 +100,7 @@ function Home( props ) {
               <div className='inp-container'>
                 <label htmlFor='userEmail' className='inp'>
                   <input required type="text" id='userEmail' className='inp-input' placeholder=' ' value={contact.userEmail} name="userEmail" onChange={handleChange}/>
-                  <span className='inp-label'>{selectLan ? 'E-mail' : 'Correo Electrónico'}</span>
+                  <span className='inp-label inp-label-e'>{selectLan ? 'E-mail' : 'Correo Electrónico'}</span>
                   <span className='inp-focus'></span>
                   <p className='inp-error'>{userEmailError}</p>
                 </label>

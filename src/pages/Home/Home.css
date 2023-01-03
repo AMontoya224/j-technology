@@ -134,6 +134,11 @@
     margin-left: -12rem;
 }
 
+
+.inp-label-e{
+    margin-top: 1.5rem;
+}
+
 @keyframes slide-right {
     0% {
         transform: translateX(-3.5rem);
