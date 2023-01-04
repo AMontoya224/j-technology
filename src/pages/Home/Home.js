@@ -11,7 +11,7 @@ import logo2 from './../../images/logo_2.svg';
 function Home( props ) {
   const { selectLeft, scrollSelect, onSelectLeft, testRef1, testRef2, testRef3, testRef4, selectHidden, selectLan } = props;
 
-  const frmContact = { service:'Home', userEmail:'', first_name:'', last_name:'', organization:'', message:'' };
+  const frmContact = { service:'Home', userEmail:'', firstName:'', lastName:'', organization:'', message:'' };
   const emailRegex = /^[-\w.%+]{1,64}@(?:[A-Z0-9-]{1,63}\.){1,125}[A-Z]{2,63}$/i;
   const [firstNameError, setFirstNameError] = useState( ' ' );
   const [lastNameError, setLastNameError] = useState( ' ' );
@@ -81,16 +81,16 @@ function Home( props ) {
             <form onSubmit={handleSubmit}>
               <div>
                 <div className='inp-container'>
-                    <label htmlFor='first_name' className='inp'>
-                        <input required type="text" id='first_name' className='inp-input' placeholder=' ' value={contact.first_name} name="first_name" onChange={handleChange}/>
+                    <label htmlFor='firstName' className='inp'>
+                        <input required type="text" id='firstName' className='inp-input' placeholder=' ' value={contact.firstName} name="firstName" onChange={handleChange}/>
                         <span className='inp-label'>{selectLan ? 'First name' : 'Nombres'}</span>
                         <span className='inp-focus'></span>
                         <p className='inp-error'>{firstNameError}</p>
                     </label>
                 </div>
                 <div className='inp-container'>
-                    <label htmlFor='last_name' className='inp'>
-                        <input required type="text" id='last_name' className='inp-input' placeholder=' ' value={contact.last_name} name="last_name" onChange={handleChange}/>
+                    <label htmlFor='lastName' className='inp'>
+                        <input required type="text" id='lastName' className='inp-input' placeholder=' ' value={contact.lastName} name="lastName" onChange={handleChange}/>
                         <span className='inp-label'>{selectLan ? 'Last name' : 'Apellidos'}</span>
                         <span className='inp-focus'></span>
                         <p className='inp-error'>{lastNameError}</p>
@@ -105,8 +105,8 @@ function Home( props ) {
                   <p className='inp-error'>{userEmailError}</p>
                 </label>
               </div>
-              <button type={( contact.first_name.length < 1 || contact.last_name.length < 1 || contact.userEmail.length < 1 || firstNameError > 1 || lastNameError > 1 || userEmailError.length > 1 ) ? 'reset' : 'submit'}
-                      className={( contact.first_name.length < 1 || contact.last_name.length < 1 || contact.userEmail.length < 1 || firstNameError > 1 || lastNameError > 1 || userEmailError.length > 1 ) ? 'submit not-submit' : 'submit'}>
+              <button type={( contact.firstName.length < 1 || contact.lastName.length < 1 || contact.userEmail.length < 1 || firstNameError > 1 || lastNameError > 1 || userEmailError.length > 1 ) ? 'reset' : 'submit'}
+                      className={( contact.firstName.length < 1 || contact.lastName.length < 1 || contact.userEmail.length < 1 || firstNameError > 1 || lastNameError > 1 || userEmailError.length > 1 ) ? 'submit not-submit' : 'submit'}>
                 Send
               </button>
             </form>
