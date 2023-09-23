@@ -1,0 +1,323 @@
+/* Product */
+.Product{
+    background: var(--color-primary);
+    border: 1px solid var(--color-primary);
+}
+
+.Products > h2{
+    margin: 13rem 7rem 2rem 7rem;
+}
+
+.Products > main{
+    text-align: center;
+    margin: 2rem 7rem 2rem 7rem;
+}
+
+.Products > main > div{
+    background: var(--color-primary);
+    display: inline-block;
+    border-radius: 0.5rem;
+    vertical-align: middle;
+    width: 32rem;
+    height: 42rem;
+    margin: 2rem;
+    text-align: center;
+    padding: 1rem;
+    cursor: pointer;
+    transition: all 350ms ease;
+}
+.Products > main:hover > :not(:hover){
+    opacity: 0.5;
+    transform: scale(0.9);
+}
+
+.Products > main > div > h4{
+    margin: 1rem 0;
+    transition: all 350ms ease;
+}
+.Products > main > div:hover > h4{
+    color: var(--color-sucess);
+}
+
+.Products > main > div > img{
+    width: 20rem;
+    height: 25rem;
+    margin: 4rem 0;
+    transition: all 350ms ease;
+}
+.Products > main > div:hover > img{
+    transform: scale(0.7) translateY(-10rem);
+}
+
+.Products > main > div > p{
+    color: transparent;
+    visibility: hidden;
+    transition: all 350ms ease;
+}
+
+.Products > main > div:hover > p{
+    color: var(--color-white);
+    visibility: visible;
+    transform: translateY(-12rem);
+}
+
+/* ProductID */
+.ProductID > main{
+    height: 100vh;
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+}
+
+.ProductID > main > section{
+    padding: 8.5rem 3.5rem 0 12rem;
+    height: 100vh;
+    scroll-snap-align: start;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ProductID > main > .one{
+    background: var(--color-background);
+}
+
+.ProductID > main > .one > div{
+    padding-top: 20rem;
+    width: 48vw;
+}
+
+.ProductID > main > .one > div > h1{
+    font-size: 6vw;
+    line-height: 15rem;
+}
+
+.ProductID > main > .one > div > p{
+    font-size: 2.2rem;
+}
+
+.ProductID > main > .one > div > i{
+    font-size: 2vw;
+}
+
+.ProductID > main > .one > img{
+    width: 40vw;
+    height: 80vh;
+}
+
+.ProductID > main > .two > p{
+    font-family: 'Londrina Outline', cursive;
+    background: rgb(78, 104, 196);
+    padding: 10vh 0 0 36vw;
+    color: rgb(38, 37, 37);
+    width: 100vw;
+    height: 100vh;
+    font-size: 35rem;
+    font-weight: 100;
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: -1;
+}
+
+.ProductID > main > .two > img{
+    width: 70rem;
+    height: 60rem;
+}
+
+.ProductID > main > .three > nav{
+    text-align: center;
+    margin: 0 auto;
+}
+
+.ProductID > main > .three > nav > ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    list-style: none;
+}
+.ProductID > main > .three > nav > ul > li{
+    width: 110rem;
+    display: flex;
+    justify-content: center;
+}
+
+.ProductID-a{
+    flex: 1;
+    color: var(--color-black);
+    font-size: 2rem;
+    font-weight: 400;
+    padding: 1rem 0;
+    transition: all 350ms ease;
+    opacity: 0.7;
+    margin: 0 0.1rem
+}
+.ProductID-a:hover, .ProductID-a.active{
+    opacity: 1;
+}
+.ProductID-a.one{
+    background: var(--color-sucess);
+}
+.ProductID-a.two{
+    background: rgb(40, 187, 145);
+}
+.ProductID-a.three{
+    background: rgb(26, 142, 109);
+}
+.ProductID-a.four{
+    background: rgb(13, 105, 79);
+}
+
+.ProductID-div{
+    display: none;
+    flex: 1;
+    height: 75vh;
+    background: rgb(198, 197, 195);
+}
+.ProductID-div.active{
+    display: grid;
+}
+.ProductID-div.one{
+    background: var(--color-sucess);
+}
+.ProductID-div.two{
+    background: rgb(40, 187, 145);
+}
+.ProductID-div.three{
+    background: rgb(26, 142, 109);
+}
+.ProductID-div.four{
+    background: rgb(13, 105, 79);
+}
+
+.ProductID-div.two > ul{
+    list-style: none;
+}
+
+.ProductID-div.four.active{
+    text-align: center;
+    padding: 2rem;
+    display: block;
+    overflow: scroll;
+}
+
+.ProductID-div.four > img{
+    display: inline-block;
+    vertical-align: middle;
+    width: 25rem;
+    border-radius: 1rem;
+    margin: 2rem;
+    padding: 1rem;
+    cursor: pointer;
+    transition: all 350ms ease;
+}
+.ProductID-div.four > img:hover{
+    transform: scale(1.1);
+}
+
+.ProductID > main > .four{
+    flex-direction: column;
+    background: rgb(74, 73, 73);
+    text-align: center;
+    width: 100%;
+}
+
+.ProductID > main > .four > Footer{
+    width: 100vw;
+    margin-left: -12rem;
+}
+
+@media only screen and (max-width: 960px){
+    .Products{
+        padding: 0;
+    }
+
+    .Products > main > div{
+        margin: 2rem 0;
+    }
+
+    .Products > div > Footer{
+        margin: 2rem 0 0 0;
+        padding: 0;
+        vertical-align: middle;
+        text-align: center;
+        height: 20vh;
+    }
+
+    .ProductID > main > section{
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding: 9.5rem 2rem 12rem 2rem;
+    }
+
+    .ProductID > main > .four{
+        padding-bottom: 0;
+    }
+
+    .ProductID > main > .one > div{
+        padding-top: 0;
+        width: 100%;
+    }
+
+    .ProductID > main > .one > div > h1{
+        line-height: 7rem;
+    }
+    
+    .ProductID > main > .one > div > i{
+        font-size: 4vw;
+    }
+    
+    .ProductID > main > .one > img{
+        width: 70vw;
+    }
+
+    .ProductID > main > .two > p{
+        padding: 20vh 0 0 7vw;
+    }
+    
+    .ProductID > main > .two > img{
+        width: 30rem;
+    }
+
+    .ProductID > main > .two > div{
+        margin-bottom: 5rem;
+    }
+
+    .ProductID > main > .three > nav > ul > li{
+        width: 40vh;
+    }
+
+    .ProductID > main > .three > nav > ul > li > a{
+        width: 1vh;
+        color: transparent;
+        font-size: 2rem;
+        width: 10vw;
+        padding: 1rem;
+    }
+
+    .ProductID > main > .three > nav > ul > li > a.active{
+        color: var(--color-black);
+        font-size: 2rem;
+        width: 75vh;
+        padding: 1rem;
+    }
+
+    .ProductID-div{
+        height: 68vh;
+    }
+
+    .ProductID > main > .four > p{
+        font-size: 4rem;
+    }
+
+    .ProductID > main > .four > img{
+        width: 12rem;
+    }
+
+    .ProductID > main > .four > Footer{
+        margin: 0;
+    }
+}

@@ -1,0 +1,180 @@
+{
+    "services": [
+        {
+            "id": 0,
+            "title": "Asesoria de artículos científicos para titulación",
+            "titleEn": "Advice on scientific articles for graduation",
+            "description": "Brindamos asesoria de articulos cientificos para que el bachiller pueda optar por su titulo de ingeniero por medio de la publicaion de un articulo cientifico indexado en scopus.",
+            "descriptionEn": "We provide advice on scientific articles so that the bachelor can opt for his engineering degree through the publication of a scientific article indexed in Scopus.",
+            "features": [
+                "publicacion de articulo de 1 a 2 meses",
+                "apoyo en tramites de universidad",
+                "asesoramiento durante el proceso de titulacion"
+            ],
+            "featuresEn": [
+                "article publication from 1 to 2 months",
+                "support in university paperwork",
+                "Advice during the graduation process"
+            ],
+            "price": 5499.9,
+            "stock": true,
+            "image": "asesoramiento.jpg",
+            "icon": "supervisor_account"
+        },
+        {
+            "id": 1,
+            "title": "Mantenimiento de equipos psicosometricos",
+            "titleEn": "Maintenance of psychosometric equipment",
+            "description": "Brindamos mantenimiento a sus equipos psicosometricos.",
+            "descriptionEn": "We provide maintenance to your psychosometric equipment.",
+            "features": [
+                "analisis de problemas",
+                "incluye materiales"
+            ],
+            "featuresEn": [
+                "problem analysis",
+                "includes materials"
+            ],
+            "price": 1499.9,
+            "stock": false,
+            "image": "mantenimiento.jpg",
+            "icon": "build"
+        }
+    ],
+    "products": [
+        {   
+            "id": 0,
+            "title": "Robot DIY v.0.1",
+            "titleEn": "DIY v.0.1 robot",
+            "description": "Robot de escritorio que simula ser una mascota inteligente.",
+            "descriptionEn": "Desktop robot that pretends to be an intelligent pet.",
+            "features": [
+                "4 servomotores",
+                "pantalla OLED",
+                "sensores de proximidad",
+                "microcontrolador Atmega 4",
+                "4 servomotores",
+                "pantalla OLED",
+                "sensores de proximidad",
+                "microcontrolador Atmega 4",
+                "4 servomotores",
+                "pantalla OLED",
+                "sensores de proximidad",
+                "microcontrolador Atmega 4"
+            ],
+            "featuresEn": [
+                "4 servo motors",
+                "OLED display",
+                "proximity sensors",
+                "Atmega 4 microcontroller",
+                "4 servo motors",
+                "OLED display",
+                "proximity sensors",
+                "Atmega 4 microcontroller",
+                "4 servo motors",
+                "OLED display",
+                "proximity sensors",
+                "Atmega 4 microcontroller"
+            ],
+            "price": 749.9,
+            "stock": true,
+            "image": "diy.webp",
+            "image2": "diy.webp",
+            "icon": "android"
+        },
+        {
+            "id": 1,
+            "title": "Robot EMOT v.0.2",
+            "titleEn": "EMOT v.0.2 robot",
+            "description": "Robot de escritorio que simula ser una mascota inteligente, diseño superior a la version anterior.",
+            "descriptionEn": "Desktop robot that simulates being an intelligent pet, superior design to the previous version.",
+            "features": [
+                "animaciones mejoras",
+                "4 servomotores",
+                "pantalla OLED",
+                "sensores de proximidad",
+                "microcontrolador Atmega 4"
+            ],
+            "featuresEn": [
+                "improved animations",
+                "4 servo motors",
+                "OLED display",
+                "proximity sensors",
+                "Atmega 4 microcontroller"
+            ],
+            "price": 999.9,
+            "stock": true,
+            "image": "emo_1.png",
+            "image2": "emo_1.png",
+            "icon": "smart_toy"
+        },
+        {
+            "id": 2,
+            "title": "Robot mosquito",
+            "titleEn": "Mosquito robot",
+            "description": "Robot interactivo con movimiento para que los niños aprendan.",
+            "descriptionEn": "Interactive robot with movement for children to learn.",
+            "features": [
+                "motor vibratorio",
+                "luces LED",
+                "bateria con duración de 1h."
+            ],
+            "featuresEn": [
+                "vibratory motor",
+                "led lights",
+                "battery lasting 1 hour."
+            ],
+            "price": 39.9,
+            "stock": true,
+            "image": "mosquito.jpg",
+            "image2": "mosquito.jpg",
+            "icon": "bug_report"
+        },
+        {
+            "id": 3,
+            "title": "Robot Wall-e",
+            "titleEn": "Wall-e robot",
+            "description": "Robot interactivo y diseño atractivo con movimiento para que los niños aprendan.",
+            "descriptionEn": "Interactive robot and attractive design with movement for children to learn.",
+            "features": [
+                "motor de movimiento",
+                "luces LED",
+                "bateria con duración de 1h.",
+                "diseño modular"
+            ],
+            "featuresEn": [
+                "motion engine",
+                "led lights",
+                "1h battery life.",
+                "modular design"
+            ],
+            "price": 59.9,
+            "stock": false,
+            "image": "walle_1.jpg",
+            "image2": "walle_1.jpg",
+            "icon": "adb"
+        },
+        {
+            "id": 4,
+            "title": "Brazo robótico",
+            "titleEn": "Arm robotic",
+            "description": "Brazo robótico interactivo para que puedan aprender conceptos de robótica y control",
+            "descriptionEn": "Interactive robot and attractive design with movement for children to learn.",
+            "features": [
+                "5 grados de libertad",
+                "Chasis liviano y modular",
+                "bateria con duración de 1h."
+            ],
+            "featuresEn": [
+                "4 degrees of freedom",
+                "Light and modular chassis",
+                "battery lasting 1 hour."
+            ],
+            "price": 1200,
+            "stock": false,
+            "image": "arm_1.svg",
+            "image2": "arm_2.jpeg",
+            "icon": "precision_manufacturing"
+        }
+    ]
+}

@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+.Blank{
+    padding: 15rem 3.5rem 0 12rem;
+    text-align: center;
+}
+
+.Blank > span{
+    margin: 2rem 0;
+    font-size: 20rem;
+    transition: all 500ms ease;
+}
+
+.Blank-logo{
+    width: 10rem;
+    animation: Blank-logo-spin infinite 10s linear;
+}
+
+.Blank > .row{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes Blank-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+@media only screen and (max-width: 560px){
+    footer > .row{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 10px;
+        text-align: center;
+    }
+}

@@ -1,0 +1,333 @@
+.Home{
+    height: 100vh;
+    text-align: left;
+}
+
+.Home > main{
+    height: 100vh;
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+}
+
+.Home > main > section{
+    padding: 10rem 3.5rem 0 12rem;
+    height: 100vh;
+    scroll-snap-align: start;
+}
+
+.Home > main > .one{
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    gap: 8rem;
+}
+
+
+.Home > main > .one > div > h1{
+    flex: 1;
+    text-align: left;
+    margin-bottom: 3rem;
+    line-height: 8rem;
+    animation: slide-right 750ms cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+/*
+.Home > main > .one > div > h1{
+    text-align: left;
+    width: 52rem;
+    height: 9rem;
+    margin: 0.5rem 0;
+    animation: typing 2000ms steps(20), blink 350ms step-end, finish 2000;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    font-family: 'Share Tech', sans-serif;
+    font-weight: 100;
+    line-height: 7rem;
+    font-size: 6em;
+}
+.Home > main > .one > div > h1:nth-child(2){
+    animation: typing 2000ms steps(20), blink 350ms step-end;
+}
+*/
+
+.Home > main > .one > div > p{
+    text-align: left;
+    font-size: 2.5rem;
+    margin: 5rem 0;
+}
+
+.Home > main > .one > div{
+    position: relative;
+}
+
+.Home > main > .one > div > button{
+    position: absolute;
+    right: 1rem;
+    bottom: 1rem;
+    color: var(--color-sucess);
+    background: var(--color-white);
+    font-size: 1.8rem;
+    border: none;
+    border-radius: 0.3rem;
+    margin-bottom: 8rem;
+    padding: 1.5rem 3rem;
+    cursor: pointer;
+    transition: all 500ms ease;
+}
+.Home > main > .one > div > button:hover{
+    background: var(--color-sucess-variant);
+    color: var(--color-white);
+}
+
+.Home > main > .one > div > img{
+    position: relative;
+    width: 600px;
+    z-index: -1;
+    opacity: 0.9;
+}
+
+.Home > main > .one > div >.logo1{
+    top: 36rem;
+    animation: slide-logo-1 2000ms cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+.Home > main > .one > div >.logo2{
+    top: -7rem;
+    animation: slide-logo-2 2000ms cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+.Home > main > .one > div{
+    text-align: center;
+}
+
+.Home > main > .two{
+    padding: 0;
+}
+
+.Home > main > .two > div{
+    padding: 10rem 3.5rem 0 12rem;
+    margin: 0;
+    background: var(--color-primary);
+    height: 60rem;
+}
+
+.Home > main > .three > div{
+    background: var(--color-white);
+    width: 80vw;
+    height: 100%;
+    margin: 0 1rem;
+    padding: 2rem;
+    border-radius: 3rem 3rem 0 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.Home > main > .three > div > iframe{
+    width: 100%;
+    height: 100%;
+}
+
+.Home > main > .four{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Home > main > .four > div{
+    background: var(--color-white);
+    color: var(--color-black);
+    width: 80vw;
+    height: 100%;
+    margin: -10rem 2rem 4rem -8rem;
+    padding: 8rem 2rem 2rem 2rem;
+    border-radius: 0 0 3rem 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.Home > main > .four > div > form > div{
+    width: 50vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5rem;
+    margin: 3rem 0;
+}
+
+.Home > main > .four > div > div{
+    color: var(--color-sucess);
+}
+
+.Home > main > .four > Footer{
+    width: 100vw;
+    margin-left: -12rem;
+}
+
+@keyframes slide-right {
+    0% {
+        transform: translateX(-3.5rem);
+    }
+    50% {
+        transform: translateX(-3.5rem);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slide-left {
+    0% {
+        -webkit-transform: translateX(20rem);
+        transform: translateX(20rem);
+    }
+    40% {
+        -webkit-transform: translateX(20rem);
+        transform: translateX(20rem);
+    }
+    100% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+}
+
+@keyframes slide-top{
+    0% {
+        -webkit-transform: translateY(8.2rem);
+        transform: translateY(8.2rem);
+    }
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+}
+
+@keyframes slide-scale-m{
+    0% {
+        -webkit-transform: translateX(-2rem) translateY(-1.5rem) scale(1.35);
+        transform: translateX(-2rem) translateY(-1.5rem) scale(1.35);
+    }
+    100% {
+        -webkit-transform: translateX(0) translateY(0) scale(1);
+        transform: translateX(0) translateY(0) scale(1);
+    }
+}
+
+
+@keyframes slide-logo-1{
+    0% {
+        -webkit-transform: translateX(60rem);
+        transform: translateX(60rem);
+    }
+    20% {
+        -webkit-transform: translateX(60rem);
+        transform: translateX(60rem);
+    }
+    100% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+}
+
+@keyframes slide-logo-2{
+    0% {
+        -webkit-transform: translateY(50rem);
+        transform: translateY(50rem);
+    }
+    20% {
+        -webkit-transform: translateY(50rem);
+        transform: translateY(50rem);
+    }
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+}
+
+@keyframes slide-button{
+    0% {
+        
+        -webkit-transform: translateY(-50rem);
+        transform: translateY(-50rem);
+    }
+    80% {
+        -webkit-transform: translateY(-50rem);
+        transform: translateY(-50rem);
+    }
+    100% {
+        -webkit-transform: translateY(0rem);
+        transform: translateY(0rem);
+    }
+}
+
+@keyframes typing{
+    from{
+        width: 0;
+    }
+}
+
+@keyframes blink{
+    50%{
+        border-color: transparent;
+    }
+}
+
+
+@media only screen and (max-width: 960px){
+    .Home > main > section{
+        padding: 9.5rem 2rem 12rem 2rem;
+    }
+
+    .Home > main > .one{
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .Home > main > .one > div > img{
+        display: none;
+    }
+    
+    h1{
+        font-size: 4em;
+        width: 100%;
+    }
+
+    .Home > main > .one > div > p{
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+
+    .Home > main > .three > div{
+        width: 100vw;
+        height: 82vh;
+        margin: 1rem 0 0 -2rem;
+        padding: 1.5rem;
+        border-radius: 3rem 3rem 0 0;
+    }
+
+    .Home > main > .four{
+        padding-bottom: 0;
+    }
+
+    .Home > main > .four > div{
+        margin: -15rem 0 0 0;
+        padding-top: 22rem;
+        width: 100vw;
+        height: 65vh;
+    }
+
+    .Home > main > .four > div > form > div{
+        width: 100%;
+        gap: 2rem;
+        margin: 2rem 0;
+    }
+
+    .Home > main > .four > Footer{
+        margin: 0;
+        height: 30vh;
+    }
+}

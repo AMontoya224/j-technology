@@ -1,0 +1,262 @@
+/*About Us*/
+.AboutUs{
+    background: var(--color-primary);
+    border: 1px solid var(--color-primary);
+}
+
+.AboutUs > h2{
+    margin: 13rem 7rem 2rem 7rem;
+}
+
+.AboutUs > main{
+    text-align: center;
+    margin: 2rem 7rem 2rem 7rem;
+}
+
+.AboutUs > main > div{
+    background: var(--color-background);
+    overflow: hidden;
+    display: inline-block;
+    border-radius: 0.5rem;
+    vertical-align: middle;
+    width: 40rem;
+    height: 40rem;
+    margin: 2rem;
+    text-align: center;
+    cursor: pointer;
+    transition: all 350ms ease;
+}
+.AboutUs > main:hover > :not(:hover){
+    opacity: 0.5;
+    transform: scale(0.9);
+}
+
+.AboutUs > main > div > img{
+    width: 40rem;
+    height: 20rem;
+    transition: all 500ms ease;
+}
+.AboutUs > main > div:hover > img{
+    transform: scale(1.2);
+}
+
+.AboutUs > main > div > h4{
+    margin: 5rem 0 1rem 0;
+    transition: all 350ms ease;
+}
+.AboutUs > main > div:hover > h4{
+    color: var(--color-sucess);
+}
+
+/*Know Us*/
+.KnowUs > main{
+    height: 100vh;
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+}
+
+.KnowUs > main > section{
+    padding: 10rem 3.5rem 0 12rem;
+    height: 100vh;
+    scroll-snap-align: start;
+    display: flex;
+    flex-direction: column;
+    justify-content:first baseline;
+    align-items: left;
+    gap: 3rem;
+}
+
+.KnowUs > main > .one{
+    position: relative;
+}
+
+.KnowUs > main > .one::before{
+    content: "";
+    background: url("../../images/asesoria-portada.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.5;
+    z-index: -1;
+}
+
+.KnowUs > main > .one > h1{
+    margin-top: 8rem;
+    text-align: left;
+    animation: slide-right 750ms cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+.KnowUs > main > .one > p{
+    width: 60%;
+    font-size: 1.8rem;
+    animation: slide-right 750ms cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+.KnowUs > main > .one > button{
+    margin-top: 2rem;
+    color: var(--color-white);
+    background: var(--color-sucess);
+    font-size: 1.7rem;
+    border: none;
+    border-radius: 0.3rem;
+    width: 25%;
+    padding: 1.5rem 2rem;
+    cursor: pointer;
+    transition: all 500ms ease;
+}
+.KnowUs > main > .one > button:hover{
+    background: var(--color-sucess-variant);
+}
+
+.KnowUs > main > .two > p{
+    font-size: 2rem;
+}
+
+.KnowUs > main > .two > div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    background: var(--color-white);
+    border-radius: 0.5rem;
+    gap: 5rem;
+    height: 43rem;
+}
+
+.P-1{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+    padding: 1.5rem;
+}
+
+.P-3{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.P-2{
+    width: 27rem;
+    height: 27rem;
+}
+
+.P-2 > .profile{
+    width: 27rem;
+    height: 27rem;
+    display: grid;
+}
+.P-2 > .not-profile{
+    display: none;
+}
+
+.P-3 > img{
+    border-radius: 0.5rem;
+    vertical-align: middle;
+    width: 10rem;
+    height: 10rem;
+    cursor: pointer;
+    transition: all 350ms ease;
+}
+.P-3:hover > :not(:hover), .P-3 > .select{
+    opacity: 0.5;
+    transform: scale(0.9);
+}
+
+.I-1{
+    flex: 2;
+    color: var(--color-black);
+}
+
+.I-1 > .information{
+    display: grid;
+}
+
+.I-1 > .not-information{
+    display: none;
+}
+
+.I-1 > div > b{
+    margin-top: 2rem;
+    font-size: 2.5rem;
+}
+
+.I-1 > div > i{
+    margin-top: 0.5rem;
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    color: var(--color-black-variant);
+}
+
+.I-1 > div > p{
+    margin-bottom: 2rem;
+}
+
+.KnowUs > main > .four{
+    background: var(--color-primary-variant);
+}
+
+.KnowUs > main > .four > Footer{
+    margin-left: -12rem;
+    width: 100vw;
+}
+
+/*Our Method*/
+
+
+/*Cell phone*/
+@media only screen and (max-width: 960px){
+    .AboutUs > main{
+        flex-direction: column;
+        height: 80vh;
+    }
+
+    .AboutUs > main > .one{
+        margin-top: 5rem;
+        border-radius: 1rem 1rem 0 0;
+    }
+    
+    .AboutUs > main > .two{
+        border-radius: 0  0 1rem 1rem;
+    }
+
+    .AboutUs > Footer{
+        margin: 5rem 0 0 0;
+        padding: 0;
+        vertical-align: middle;
+        text-align: center;
+        height: 20vh;
+    }
+
+    .KnowUs > main > section{
+        padding: 9.5rem 2rem 9.5rem 2rem;
+    }
+
+    .KnowUs > main > .four{
+        padding-bottom: 0;
+    }
+
+    .KnowUs > main > .four > Contact{
+        margin: 5rem 0 0 -2rem;
+        padding: 0;
+        vertical-align: middle;
+        text-align: center;
+        height: 40vh;
+    }
+
+    .KnowUs > main > .four > Footer{
+        margin: 5rem 0 0 -2rem;
+        padding: 0;
+        vertical-align: middle;
+        text-align: center;
+        height: 40vh;
+    }
+}

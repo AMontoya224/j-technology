@@ -1,0 +1,200 @@
+/*Contact*/
+.Contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+    color: var(--color-white);
+}
+
+.Contact > div{
+    display: flex;
+    flex-direction: row;    
+    align-items: center;
+    justify-content: space-between;
+}
+
+.Contact > div > div{
+    margin: 5rem;
+}
+
+.Contact > div > div > h4{
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.Contact > div > .container{
+    background: white;
+    border-radius: 2rem;
+    padding: 2rem;
+}
+
+.Contact > div > .container > div{
+    color: var(--color-sucess);
+}
+
+.Contact > div > div > form{
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+}
+
+.Contact > div > div > form > button{
+    color: var(--color-white);
+    background: var(--color-sucess);
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 0 0.5rem 0.5rem 0;
+    padding: 0.6rem 1rem;
+    cursor: pointer;
+    transition: all 500ms ease;
+}
+.Contact > div > div > form > button:hover{
+    background: var(--color-sucess-variant);
+}
+
+.Contact > div > div > form > button.not-submit{
+    background: var(--color-sucess-variant);
+    cursor: default;
+}
+
+.Contact > div > div > button{
+    color: var(--color-white);
+    background: var(--color-sucess);
+    border: none;
+    border-radius: 1rem;
+    font-size: 1.6rem;
+    padding: 1.2rem;
+    cursor: pointer;
+    transition: all 500ms ease;
+}
+.Contact > div > div > button:hover{
+    background: var(--color-sucess-variant);
+}
+
+.inp-container{
+    width: 100%;
+}
+
+.inp{
+    position: relative;
+    width: 100%;
+    border-radius: 0.2rem;
+    overflow: hidden;
+}
+
+.inp-input{
+    appearance: none;
+    width: 100%;
+    padding: 19px 12px 3px 12px;
+    border-radius: 2px;
+    box-shadow: var(--box-shadow);
+    transition: all 500ms ease;
+    color: var(--color-letter);
+}
+.inp-input:hover{
+    box-shadow: inset 0 -1px 0 rgba(0, 0, 0, .5);
+}
+
+.inp-input:not(:placeholder-shown) + .inp-label{
+    color: var(--color-letter);
+    transform: translate3d(0, -15px, 0) scale(.75);
+}
+.inp-input:focus{
+    outline: none;
+    box-shadow: inset 0 -2px 0 var(--color-primary);
+}
+
+.inp-input:focus + .inp-label{
+    color: var(--color-primary);
+    transform: translate3d(0, -15px, 0) scale(.75);
+}
+
+.inp-input:focus + .inp-label + .inp-focus{
+    transform: scaleX(1);
+    transition: all 500ms ease;
+}
+
+.inp-label{
+    position: absolute;
+    top: 0;
+    left: 12px;
+    transform-origin: 0 0;
+    opacity: .7;
+    transform: translate3d(0, 0, 0);
+    transition: all .2s ease;
+    pointer-events: none;
+}
+
+.inp-focus{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    transform: scaleX(0);
+    transform-origin: left;
+}
+
+.inp-error{
+    display: block;
+    text-align: right;
+    font-size: 1rem;
+    color: var(--color-danger);
+}
+
+.inp-label-e{
+    margin-top: 1.5rem;
+}
+
+.label-black{
+    color: var(--color-white);
+}
+.inp-black{
+    background: rgba(0, 0, 0, 0.05);
+}
+.inp-black:hover{
+    background: rgba(0, 0, 0, 0.09);
+}
+.inp-black:focus{
+    background: rgba(0, 0, 0, 0.09);
+}
+
+.label-white{
+    color: var(--color-letter);
+}
+.inp-white{
+    background: rgba(255, 255, 255, 0.8);
+}
+.inp-white:hover{
+    background: rgba(255, 255, 255, 0.9);
+}
+.inp-white:focus{
+    background: rgba(255, 255, 255, 0.9);
+}
+
+/*Contact Story*/
+
+
+/*Contact Service*/
+
+
+@media only screen and (max-width: 960px){
+    .Contact > h1{
+        font-size: 3.5rem;
+    }
+
+    .Contact > div{
+        flex-direction: column;
+    }
+
+    .Contact > div > div{
+        margin: 3rem 0rem;
+    }
+    
+    .Contact > div > div > h1{
+        font-size: 2.5rem;
+    }
+}
