@@ -36,10 +36,15 @@
 
 
 @media only screen and (max-width: 560px){
-    footer > .row{
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        grid-gap: 10px;
-        text-align: center;
-    }
+  .Blank{
+    padding: 20rem 2rem 0 2rem;
+    text-align: center;
+  }
+
+  footer > .row{
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-gap: 10px;
+      text-align: center;
+  }
 }

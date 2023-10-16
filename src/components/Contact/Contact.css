@@ -118,6 +118,7 @@
 
 .inp-label{
     position: absolute;
+    color: var(--color-letter);
     top: 0;
     left: 12px;
     transform-origin: 0 0;

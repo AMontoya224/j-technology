@@ -5,7 +5,7 @@ import Contact from './../../components/Contact/Contact';
 import './AboutUs.css';
 import Footer from '../../components/Footer/Footer';
 import Photo1 from './../../images/photo-1.png';
-import Photo2 from './../../images/photo-2.jpg';
+import Photo2 from './../../images/photo2.jpg';
 import Photo3 from './../../images/photo-3.jpg';
 
 function KnowUs( props ) {
@@ -39,12 +39,12 @@ function KnowUs( props ) {
             <div className='P-1'>
               <div className='P-2'>
                 <img className={(selectPhoto === '#1' ) ? 'profile' : 'not-profile'} src={Photo1} alt='photo1'/>
-                <img className={(selectPhoto === '#2' ) ? 'profile' : 'not-profile'} src={Photo1} alt='photo1'/>
+                <img className={(selectPhoto === '#2' ) ? 'profile' : 'not-profile'} src={Photo2} alt='photo1'/>
                 <img className={(selectPhoto === '#3' ) ? 'profile' : 'not-profile'} src={Photo3} alt='photo1'/>
               </div>
               <div className='P-3'>
                 <img className={(selectPhoto === '#1' ) ? 'select' : ''} onClick={() => onSelectPhoto('#1')} src={Photo1} alt='photo1'/>
-                <img className={(selectPhoto === '#2' ) ? 'select' : ''} onClick={() => onSelectPhoto('#2')} src={Photo1} alt='photo2'/>
+                <img className={(selectPhoto === '#2' ) ? 'select' : ''} onClick={() => onSelectPhoto('#2')} src={Photo2} alt='photo2'/>
                 <img className={(selectPhoto === '#3' ) ? 'select' : ''} onClick={() => onSelectPhoto('#3')} src={Photo3} alt='photo3'/>
               </div>
             </div>
@@ -59,7 +59,7 @@ function KnowUs( props ) {
                 </div>
               </div>
               <div className={(selectPhoto === '#2' ) ? 'information' : 'not-information'}>
-                <h3>{selectLan ? 'Eng. Juan Perez' : 'Ing. Juan Perez'}</h3>
+                <h3>{selectLan ? 'Eng. Juan Perez' : 'Ing. Juan Andaluz'}</h3>
                 <b>{selectLan ? 'Marketing and Technology Director' : 'Director de Marketing y Tecnología'}</b>
                 <i>{selectLan ? 'Technology is the future of humanity' : 'La tecnología es el futuro de la humanidad'}</i>
                 <p>{selectLan ? 'Decription...' : 'Decripción...'}</p>
