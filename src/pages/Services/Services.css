@@ -5,19 +5,19 @@
 
 .Services > main{
     text-align: center;
-    margin: 2rem 7rem 2rem 7rem;
+    margin: 2rem 7rem 4rem 7rem;
 }
 
 .Services > main > div{
     background: var(--color-background);
+    overflow: hidden;
     display: inline-block;
     border-radius: 0.5rem;
     vertical-align: middle;
-    width: 32rem;
-    height: 42rem;
+    width: 40rem;
+    height: 40rem;
     margin: 2rem;
     text-align: center;
-    padding: 1rem;
     cursor: pointer;
     transition: all 350ms ease;
 }
@@ -26,27 +26,31 @@
     transform: scale(0.9);
 }
 
+.Services > main > div > img{
+    width: 28rem;
+    height: 20rem;
+    margin: 4rem 0;
+    transition: all 750ms ease;
+}
+.Services > main > div:hover > img{
+    transform: scale(1.4);
+    filter: brightness(0.2);
+}
+
 .Services > main > div > h4{
     margin: 1rem 0;
     transition: all 350ms ease;
 }
 .Services > main > div:hover > h4{
     color: var(--color-sucess);
-}
-
-.Services > main > div > img{
-    width: 28rem;
-    height: 20rem;
-    margin: 4rem 0;
-    transition: all 350ms ease;
-}
-.Services > main > div:hover > img{
-    transform: scale(0.7) translateY(-10rem);
+    transform: translateY(-15rem);
 }
 
 .Services > main > div > p{
     color: transparent;
     visibility: hidden;
+    width: 90%;
+    margin: 0 auto;
     transition: all 350ms ease;
 }
 .Services > main > div:hover > p{
@@ -63,16 +67,18 @@
 }
 
 .ServiceID > main > section{
+    padding: 15rem 3.5rem 0 12rem;
     height: 100vh;
     scroll-snap-align: start;
 }
 
 .ServiceID > main > .one{
-    padding: 0;
     position: relative;
-    display: inline-block;
-    text-align: left;
-    z-index: -1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
 }
 
 .ServiceID > main > .one > img{
@@ -80,23 +86,52 @@
     height: 100vh;
     opacity: 0.4;
     filter: blur(4px);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
 }
 
 .ServiceID > main > .one > h1{
-    position: absolute;
-    top: 60%;
-    left: 40%;
-    transform: translate(-50%, -50%);
+    font-size: 6vw;
+}
+
+.ServiceID > main > .one > p{
+    font-size: 2.2rem;
 }
 
 .ServiceID > main > .two{
     height: 200vh;
-    padding: 8.5rem 3.5rem 0 12rem;
+    width: 90%;
+    font-size: 2rem;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.ServiceID > main > .two > i{
+    font-size: 3rem;
+}
+
+.ServiceID > main > .two > p{
+    margin: 5rem 0;
+}
+
+.ServiceID > main > .two > ul{
+    list-style: decimal;
+}
+
+.ServiceID > main > .two > ul > li{
+    margin: 4rem 0;
 }
 
 .ServiceID > main > .four{
-    width: 60%;
-    padding: 8.5rem 3.5rem 0 12rem;
+    width: 100%;
+    padding: 12rem 3.5rem 0 12rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
 }
 
 .ServiceID > main > .four > Footer{

@@ -20,8 +20,8 @@ function Services( props ) {
         {data.services.map( ( service, idx ) => {
           return(
             <div onClick={() => onPage(`/services/${idx+1}`)}>
-              <h4>{selectLan ? `${service.titleEn}` : `${service.title}`}</h4>
               <img src={require(`../../images/${service.image}`)} alt={service.titleEn}/>
+              <h4>{selectLan ? `${service.titleEn}` : `${service.title}`}</h4>
               <p>{selectLan ? `${service.descriptionEn}` : `${service.description}`}</p>
             </div>
           )

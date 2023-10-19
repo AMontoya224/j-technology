@@ -6,28 +6,28 @@
     align-items: center;
     height: 100%;
     color: var(--color-white);
+    width: 80%;
+    margin: 0 auto;
 }
 
 .Contact > div{
+    width: 100%;
     display: flex;
     flex-direction: row;    
     align-items: center;
     justify-content: space-between;
 }
 
-.Contact > div > div{
+.Contact > div > .container{
+    background: white;
+    border-radius: 2rem;
+    padding: 2rem;
     margin: 5rem;
 }
 
 .Contact > div > div > h4{
     font-size: 2.5rem;
     margin-bottom: 2rem;
-}
-
-.Contact > div > .container{
-    background: white;
-    border-radius: 2rem;
-    padding: 2rem;
 }
 
 .Contact > div > .container > div{
@@ -41,36 +41,8 @@
 }
 
 .Contact > div > div > form > button{
-    color: var(--color-white);
-    background: var(--color-sucess);
-    font-size: 1.5rem;
-    border: none;
     border-radius: 0 0.5rem 0.5rem 0;
-    padding: 0.6rem 1rem;
-    cursor: pointer;
-    transition: all 500ms ease;
-}
-.Contact > div > div > form > button:hover{
-    background: var(--color-sucess-variant);
-}
-
-.Contact > div > div > form > button.not-submit{
-    background: var(--color-sucess-variant);
-    cursor: default;
-}
-
-.Contact > div > div > button{
-    color: var(--color-white);
-    background: var(--color-sucess);
-    border: none;
-    border-radius: 1rem;
-    font-size: 1.6rem;
-    padding: 1.2rem;
-    cursor: pointer;
-    transition: all 500ms ease;
-}
-.Contact > div > div > button:hover{
-    background: var(--color-sucess-variant);
+    padding: 0.7rem 1rem 0.3rem 1rem;
 }
 
 .inp-container{
@@ -176,11 +148,31 @@
     background: rgba(255, 255, 255, 0.9);
 }
 
-/*Contact Story*/
+/*Contact Product*/
+.ContactProduct{
+    width: 60%;
+    background: var(--color-background);
+    border-radius: 1rem;
+    padding: 4rem;
+}
 
+.ContactProduct > form{
+    padding: 2rem;
+}
 
-/*Contact Service*/
+.ContactProduct > form > div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 4rem;
+    margin: 1rem 0;
+}
 
+.ContactProduct > form > div > button{
+    margin-top: -1.4rem;
+    padding: 1rem 7rem;
+}
 
 @media only screen and (max-width: 960px){
     .Contact > h1{

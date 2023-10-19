@@ -1,9 +1,4 @@
 /* Product */
-.Product{
-    background: var(--color-primary);
-    border: 1px solid var(--color-primary);
-}
-
 .Products > h2{
     margin: 13rem 7rem 2rem 7rem;
 }
@@ -14,15 +9,15 @@
 }
 
 .Products > main > div{
-    background: var(--color-primary);
+    background: var(--color-background);
+    overflow: hidden;
     display: inline-block;
     border-radius: 0.5rem;
     vertical-align: middle;
-    width: 32rem;
-    height: 42rem;
+    width: 40rem;
+    height: 40rem;
     margin: 2rem;
     text-align: center;
-    padding: 1rem;
     cursor: pointer;
     transition: all 350ms ease;
 }
@@ -31,22 +26,24 @@
     transform: scale(0.9);
 }
 
+.Products > main > div > img{
+    width: 20rem;
+    height: 25rem;
+    margin: 4rem 0;
+    transition: all 750ms ease;
+}
+.Products > main > div:hover > img{
+    transform: scale(1.4);
+    filter: brightness(0.2);
+}
+
 .Products > main > div > h4{
     margin: 1rem 0;
     transition: all 350ms ease;
 }
 .Products > main > div:hover > h4{
     color: var(--color-sucess);
-}
-
-.Products > main > div > img{
-    width: 20rem;
-    height: 25rem;
-    margin: 4rem 0;
-    transition: all 350ms ease;
-}
-.Products > main > div:hover > img{
-    transform: scale(0.7) translateY(-10rem);
+    transform: translateY(-15rem);
 }
 
 .Products > main > div > p{
@@ -95,10 +92,6 @@
     font-size: 2.2rem;
 }
 
-.ProductID > main > .one > div > i{
-    font-size: 2vw;
-}
-
 .ProductID > main > .one > img{
     width: 40vw;
     height: 80vh;
@@ -124,6 +117,36 @@
 .ProductID > main > .two > img{
     width: 70rem;
     height: 60rem;
+}
+
+.ProductID > main > .two > div{
+    width: 50%;
+    padding: 0 3rem;
+}
+
+.ProductID > main > .two > div > div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.ProductID > main > .two > div > div{
+    margin: 2rem 4rem;
+}
+
+.ProductID > main > .two > div > div > p{
+    padding: .5rem 2rem;
+    border-radius: .5rem;
+}
+.ProductID > main > .two > div > div > .stock{
+    background: var(--color-sucess);
+}
+.ProductID > main > .two > div > div > .n-stock{
+    background: var(--color-danger);
+}
+
+.ProductID > main > .two > div > p{
+    font-size: 2.5rem;
 }
 
 .ProductID > main > .three > nav{
@@ -172,6 +195,7 @@
 
 .ProductID-div{
     display: none;
+    color: var(--color-black);
     flex: 1;
     height: 75vh;
     background: rgb(198, 197, 195);
@@ -181,9 +205,11 @@
 }
 .ProductID-div.one{
     background: var(--color-sucess);
+    padding: 20rem 5rem;
 }
 .ProductID-div.two{
     background: rgb(40, 187, 145);
+    padding: 5rem;
 }
 .ProductID-div.three{
     background: rgb(26, 142, 109);
@@ -192,8 +218,16 @@
     background: rgb(13, 105, 79);
 }
 
+.ProductID-div.one > p{
+    font-size: 2rem;
+}
+
 .ProductID-div.two > ul{
-    list-style: none;
+    list-style: decimal;
+}
+
+.ProductID-div.two > ul > li{
+    margin: 2rem 0;
 }
 
 .ProductID-div.four.active{
@@ -218,6 +252,7 @@
 }
 
 .ProductID > main > .four{
+    padding-top: 12rem;
     flex-direction: column;
     background: rgb(74, 73, 73);
     text-align: center;

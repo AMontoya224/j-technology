@@ -22,8 +22,8 @@ function Products( props ) {
         {data.products.map( ( product, idx ) => {
           return(
             <div onClick={() => onPage(`/Products/${idx+1}`)}>
-              <h4>{selectLan ? `${product.titleEn}` : `${product.title}`}</h4>
               <img src={require(`../../images/${product.image}`)} alt={product.titleEn}/>
+              <h4>{selectLan ? `${product.titleEn}` : `${product.title}`}</h4>
               <p>{selectLan ? `${product.descriptionEn}` : `${product.description}`}</p>
             </div>
           )

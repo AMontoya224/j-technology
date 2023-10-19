@@ -10,7 +10,7 @@ import Photo3 from './../../images/photo-3.jpg';
 
 function KnowUs( props ) {
   const { selectLeft, scrollSelect, onSelectLeft, testRef1, testRef2, testRef4, selectLan } = props;
-  const [selectPhoto, setSelectPhoto] = useState( '' );
+  const [selectPhoto, setSelectPhoto] = useState( '#1' );
 
   const onSelectPhoto = (select) => {
     setSelectPhoto( select );
@@ -27,9 +27,9 @@ function KnowUs( props ) {
           <h1>{selectLan ? 'Know Us' : 'Conócenos'}</h1>
           <p>{selectLan ? 'We are a company dedicated in industrial automation services, information technology, software development, specialist in web design, robotic developers, domotics specialized in different sectors.' : 
                           'Somos una empresa dedicada en servicios de automatización industrial, tecnología de la información, desarrollo del software, especialista en diseño de páginas web, desarrolladores roboticos, domotica especializada en distintos sectores.'}</p>
-          <button>
+          <a href="https://www.canva.com/design/DAFvv41keJY/ev3R6ZTA3lu9cKZdXaiBAQ/view?utm_content=DAFvv41keJY&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink" target="_blank" rel="noreferrer">
             {selectLan ? 'Company Presentation' : 'Presentación de la Compañía'}
-          </button>
+          </a>
         </section>
 
         <section className='two' ref={testRef2} onMouseEnter={() => scrollSelect( '#2' )} onTouchStart={() => scrollSelect( '#2' )}>

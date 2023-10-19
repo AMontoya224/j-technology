@@ -22,11 +22,11 @@ function Contact( props ) {
     const handleSubmit = e =>{
 	    e.preventDefault();
 		emailjs.send('default_service', 'template_u06d55g', contact, 'Q_5mH4h7kPFWcyGFJ')
-		    .then((response) => {
+		    .then(() => {
 			    setContact(frmContact);
 				setShowMessage(true);
                 setTimeout(function(){ setShowMessage(false) }, 3000);
-		    }, (err) => {
+		    }, err => {
 				console.log('FAILED...', err);
 		});
     }
@@ -37,7 +37,7 @@ function Contact( props ) {
             <div>
                 <div>
                     <h4>{selectLan ? 'Do you want to work with us?' : '¿Quiere trabajar con nosotros?'}</h4>
-                    <button>{selectLan ? 'Contact us' : 'Contáctanos'}</button>
+                    <button className='submit'>{selectLan ? 'Contact us' : 'Contáctanos'}</button>
                 </div>
                 <div className='container'>
                     <h5>{selectLan ? 'Our latest news in your mailbox' : 'Nuestras últimas noticias en su correo'}</h5>
@@ -51,8 +51,8 @@ function Contact( props ) {
                                 <p className='inp-error'>{updateError}</p>
                             </label>
                         </div>
-                        <button type={( contact.userEmail.length.length < 1 || updateError.length > 1 ) ? 'reset' : 'submit'}
-                                className={( contact.userEmail.length < 1 || updateError.length > 1 ) ? 'c-submit not-submit' : 'c-submit'}>
+                        <button type={( contact.userEmail.length < 1 || updateError.length > 1 ) ? 'reset' : 'submit'}
+                                className={( contact.userEmail.length < 1 || updateError.length > 1 ) ? 'submit not-submit' : 'submit'}>
                             <span className="material-icons-outlined">keyboard_return</span>
                         </button>
                     </form>

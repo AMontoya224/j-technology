@@ -43,7 +43,7 @@ function App() {
   };
 
   useEffect( ()=>{
-    axios.get( 'https://api.npoint.io/af96496d273fd87d4e91' )
+    axios.get( 'https://api.npoint.io/5bb97d32a73d253dcd8c' )
       .then( res=>{
         setData( res.data );
       });

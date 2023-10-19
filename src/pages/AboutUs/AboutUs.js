@@ -18,7 +18,7 @@ function AboutUs( props ) {
       <head>
         <title>{selectLan ? 'About us' : 'Sobre Nosotros'} | J-Technology</title>
       </head>
-      <h2>{selectLan ? 'ABOUT US' : 'SOBRE NOSOTROS'}</h2>
+      <h2>{selectLan ? 'About us' : 'Sobre Nosotros'}</h2>
       <main>
         {data.aboutus.map( ( about, idx ) => {
           return(
