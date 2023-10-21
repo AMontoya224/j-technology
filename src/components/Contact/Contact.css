@@ -30,6 +30,10 @@
     margin-bottom: 2rem;
 }
 
+.Contact > div > .container > h4{
+    color: var(--color-primary);
+}
+
 .Contact > div > .container > div{
     color: var(--color-sucess);
 }
@@ -154,6 +158,10 @@
     background: var(--color-background);
     border-radius: 1rem;
     padding: 4rem;
+}
+
+.ContactProduct > div{
+    color: var(--color-sucess);
 }
 
 .ContactProduct > form{

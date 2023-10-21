@@ -5,7 +5,7 @@ import './Contact.css';
 
 function ContactService( props ) {
     const { selectLan, userService } = props;
-    const frmContact = { userService:{userService}, userEmail:'', firstName:'', lastName:'', userCountry:'', userNumber:'', userMessage:'' };
+    const frmContact = { userService, userEmail:'', firstName:'', lastName:'', userCountry:'', userNumber:'', userMessage:'' };
     const frmError = { userEmail:' ', firstName:' ', lastName:' ', userMessage:' '};
     const emailRegex = /^[-\w.%+]{1,64}@(?:[A-Z0-9-]{1,63}\.){1,125}[A-Z]{2,63}$/i;
     const [error, setError] = useState(frmError);
@@ -27,7 +27,7 @@ function ContactService( props ) {
 
     const handleSubmit = e =>{
 	    e.preventDefault();
-		emailjs.send('default_service', 'template_u06d55g', contact, 'Q_5mH4h7kPFWcyGFJ')
+		emailjs.send('j-technology', 'template_vi56bth', contact, 'c43fg4YmjHjiqE4Xh')
 		    .then(() => {
 			    setContact(frmContact);
 				setShowMessage(true);

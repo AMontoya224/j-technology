@@ -21,7 +21,7 @@ function Contact( props ) {
 
     const handleSubmit = e =>{
 	    e.preventDefault();
-		emailjs.send('default_service', 'template_u06d55g', contact, 'Q_5mH4h7kPFWcyGFJ')
+		emailjs.send('j-technology', 'template_vi56bth', contact, 'c43fg4YmjHjiqE4Xh')
 		    .then(() => {
 			    setContact(frmContact);
 				setShowMessage(true);
@@ -40,7 +40,7 @@ function Contact( props ) {
                     <button className='submit'>{selectLan ? 'Contact us' : 'Contáctanos'}</button>
                 </div>
                 <div className='container'>
-                    <h5>{selectLan ? 'Our latest news in your mailbox' : 'Nuestras últimas noticias en su correo'}</h5>
+                    <h4>{selectLan ? 'Our latest news in your mailbox' : 'Nuestras últimas noticias en su correo'}</h4>
                     {showMessage ? <div role="alert">{selectLan ? 'Email Send Success' : 'Correo enviado satisfactoriamente'}</div> : ' '}
                     <form onSubmit={handleSubmit}>
                         <div className='inp-container'>

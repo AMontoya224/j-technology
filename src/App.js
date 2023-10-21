@@ -11,7 +11,6 @@ import ServiceID from './pages/Services/ServiceID';
 import AboutUs from './pages/AboutUs/AboutUs';
 import KnowUs from './pages/AboutUs/KnowUs';
 import OurMethod from './pages/AboutUs/OurMethod';
-//import Data from '../src/api/data.json'
 
 
 function App() {
@@ -57,7 +56,7 @@ function App() {
     <BrowserRouter>
       <Header onSelectLeft={onSelectLeft} testRef1={testRef1} selectLan={selectLan} onSelectLan={onSelectLan} selectHidden={selectHidden} data={data}/>
       <Switch>
-        <Route exact path="/" render={ routeProps => <Home onSelectLeft={onSelectLeft} scrollSelect={scrollSelect} selectLeft={selectLeft} testRef1={testRef1} testRef2={testRef2} testRef3={testRef3} testRef4={testRef4} selectLan={selectLan} setSelectHidden={setSelectHidden} {...routeProps} />}/>
+        <Route exact path="/" render={ routeProps => <Home onSelectLeft={onSelectLeft} scrollSelect={scrollSelect} selectLeft={selectLeft} testRef1={testRef1} testRef2={testRef2} testRef3={testRef3} testRef4={testRef4} selectLan={selectLan} setSelectHidden={setSelectHidden} data={data} {...routeProps} />}/>
         <Route exact path="/services" render={ routeProps => <Services onSelectLeft={onSelectLeft} selectLeft={selectLeft} testRef1={testRef1} selectLan={selectLan} data={data} {...routeProps} />}/>
         <Route exact path="/services/:_id" render={ routeProps => <ServiceID onSelectLeft={onSelectLeft} scrollSelect={scrollSelect} selectLeft={selectLeft} testRef1={testRef1} testRef2={testRef2} testRef3={testRef3} testRef4={testRef4} selectLan={selectLan} data={data} {...routeProps} />}/>
         <Route exact path="/products" render={ routeProps => <Products onSelectLeft={onSelectLeft} selectLeft={selectLeft} testRef1={testRef1} selectLan={selectLan} data={data} {...routeProps} />}/>

@@ -26,7 +26,7 @@ function ProductID( props ) {
           <p>{product.tit}</p>
           <img src={require(`../../images/${product.image2}`)} alt={product.titleEn}/>
           <div>
-            <h1>{selectLan ? `${product.title2En}` : `${product.title2}`}</h1>
+            <h2>{selectLan ? `${product.title2En}` : `${product.title2}`}</h2>
             <div>
               <i>{selectLan ? `$ ${(product.price/3.99).toFixed(1)}` : `s/. ${product.price}`}</i>
               <p className={product.stock ? 'stock': 'n-stock'}>{selectLan ? 'Stock': 'Disponible'}</p>
@@ -39,10 +39,10 @@ function ProductID( props ) {
           <nav>
             <ul>
               <li>
-                <a href='#Description' className={url === '#Description' || url === '' ? 'ProductID-a one active' : 'ProductID-a one'}>{selectLan ? 'Description' : 'Descripción'}</a>
-                <a href='#Especifications' className={url === '#Especifications'? 'ProductID-a two active' : 'ProductID-a two'}>{selectLan ? 'Especifications' : 'Especificaciones'}</a>
-                <a href='#Guides' className={url === '#Guides'? 'ProductID-a three active' : 'ProductID-a three'}>{selectLan ? 'Guides' : 'Guías'}</a>
-                <a href='#Activities' className={url === '#Activities'? 'ProductID-a four active' : 'ProductID-a four'}>{selectLan ? 'Activities' : 'Actividades'}</a>
+                <a href='#Description' className={url === '#Description' || url === '' ? 'ProductID-a one active' : 'ProductID-a one'}><h3>{selectLan ? 'Description' : 'Descripción'}</h3></a>
+                <a href='#Especifications' className={url === '#Especifications'? 'ProductID-a two active' : 'ProductID-a two'}><h3>{selectLan ? 'Especifications' : 'Especificaciones'}</h3></a>
+                <a href='#Guides' className={url === '#Guides'? 'ProductID-a three active' : 'ProductID-a three'}><h3>{selectLan ? 'Guides' : 'Guías'}</h3></a>
+                <a href='#Activities' className={url === '#Activities'? 'ProductID-a four active' : 'ProductID-a four'}><h3>{selectLan ? 'Activities' : 'Actividades'}</h3></a>
               </li>
               <li>
                 <div className={url === '#Description' || url === '' ? 'ProductID-div one active' : 'ProductID-div one'}>

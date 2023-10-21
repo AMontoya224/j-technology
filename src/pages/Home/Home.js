@@ -9,7 +9,7 @@ import logo2 from './../../images/logo_2.svg';
 
 
 function Home( props ) {
-  const { selectLeft, scrollSelect, onSelectLeft, testRef1, testRef2, testRef3, testRef4, selectHidden, selectLan } = props;
+  const { selectLeft, scrollSelect, onSelectLeft, testRef1, testRef2, testRef3, testRef4, selectHidden, selectLan, data } = props;
 
   const frmContact = { userService:'Home', userEmail:'', firstName:'', lastName:'', userCountry:'', userNumber:'', userMessage:'' };
   const frmError = { userEmail:' ', firstName:' ', lastName:' '};
@@ -33,7 +33,7 @@ function Home( props ) {
 
   const handleSubmit = e =>{
     e.preventDefault();
-    emailjs.send('default_service', 'template_u06d55g', contact, 'Q_5mH4h7kPFWcyGFJ')
+    emailjs.send('j-technology', 'template_omrm83l', contact, 'c43fg4YmjHjiqE4Xh')
       .then(() => {
         setContact(frmContact);
         setShowMessage(true);
@@ -71,20 +71,21 @@ function Home( props ) {
             <h2>Algunos de nuestros trabajos</h2>
             <div>
               <div>
-                <div>
-                  <img src={require(`../../images/asesoramiento.jpg`)} alt='Trabajo 1'/>
-
-                </div>
-                <div>
-                  <img src={require(`../../images/bg-robot.jpg`)} alt='Trabajo 2'/>
-                </div>
-                <div>
-                  <img src={require(`../../images/walle_2.jpg`)} alt='Trabajo 3'/>
-                </div>
+                {data.works.map( ( work, idx ) => {
+                  return(
+                    <div>
+                      <img src={require(`../../images/${work.image}`)} alt={work.titleEn}/>
+                      <div>
+                        <h3>{selectLan ? `${work.titleEn}` : `${work.title}`}</h3>
+                        <p>{selectLan ? `${work.descriptionEn}` : `${work.description}`}</p>
+                      </div>
+                    </div>
+                  )
+                })}
               </div>
             </div>
           </div>
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#2b315d" fill-opacity="1" d="M0,96L34.3,106.7C68.6,117,137,139,206,133.3C274.3,128,343,96,411,85.3C480,75,549,85,617,80C685.7,75,754,53,823,37.3C891.4,21,960,11,1029,42.7C1097.1,75,1166,149,1234,176C1302.9,203,1371,181,1406,170.7L1440,160L1440,0L1405.7,0C1371.4,0,1303,0,1234,0C1165.7,0,1097,0,1029,0C960,0,891,0,823,0C754.3,0,686,0,617,0C548.6,0,480,0,411,0C342.9,0,274,0,206,0C137.1,0,69,0,34,0L0,0Z"></path></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#4E68C4" fill-opacity="1" d="M0,96L34.3,106.7C68.6,117,137,139,206,133.3C274.3,128,343,96,411,85.3C480,75,549,85,617,80C685.7,75,754,53,823,37.3C891.4,21,960,11,1029,42.7C1097.1,75,1166,149,1234,176C1302.9,203,1371,181,1406,170.7L1440,160L1440,0L1405.7,0C1371.4,0,1303,0,1234,0C1165.7,0,1097,0,1029,0C960,0,891,0,823,0C754.3,0,686,0,617,0C548.6,0,480,0,411,0C342.9,0,274,0,206,0C137.1,0,69,0,34,0L0,0Z"></path></svg>
         </section>
 
         <section className='three' ref={testRef3} onMouseEnter={() => scrollSelect( '#3' )} onTouchStart={() => scrollSelect( '#3' )}>

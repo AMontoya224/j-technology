@@ -1,17 +1,15 @@
 import React, { useState } from 'react';
 import { withRouter } from 'react-router-dom';
 import './Header.css';
-import logo from './../../images/Logo2.png'
-import gorro from './../../images/gorro.png'
-import whatsapp from './../../images/whatsapp.png'
+import logo from './../../images/Logo2.png';
+import gorro from './../../images/gorro.png';
+import whatsapp from './../../images/whatsapp.png';
+import Theme from '../Theme/Theme';
 
 
 function Header( props ) {
     const { onSelectLeft, testRef1, selectLan, onSelectLan, selectHidden, data } = props;
     const [btnEsc, setBtnEsc] = useState( false );
-    /*const [btnProducts, setBtnProducts] = useState( false );
-    const [btnServices, setBtnServices] = useState( false );
-    const [btnAbout, setBtnAbout] = useState( false );*/
 
     const onBtnEsc = () => {
         if(!btnEsc){
@@ -21,34 +19,6 @@ function Header( props ) {
             setBtnEsc( false );
         }
     };
-    
-    /*
-    const onBtnProducts = () => {
-        if(!btnProducts){
-            setBtnProducts( true );
-        }
-        else{
-            setBtnProducts( false );
-        }
-    };
-
-    const onBtnServices = () => {
-        if(!btnServices){
-            setBtnServices( true );
-        }
-        else{
-            setBtnServices( false );
-        }
-    };
-
-    const onBtnAbout = () => {
-        if(!btnAbout){
-            setBtnAbout( true );
-        }
-        else{
-            setBtnAbout( false );
-        }
-    };*/
 
     const onBtnLan = () => {
         if(!selectLan){
@@ -134,6 +104,7 @@ function Header( props ) {
                         <p onClick={() => onPage('/about-us')}>{selectLan ? 'All our information...' : 'Toda nuestra información...'}</p>
                     </div>
                 </div>
+                <Theme/>
                 <button className='L-btn' onClick={onBtnLan}><span className="material-icons-round">translate</span><p>{selectLan ? 'English' : 'Español'}</p></button>
                 <button className='H-btn' onClick={onBtnEsc}><div className={btnEsc ? 's1 active' : 's1'}></div><div className={btnEsc ? 's2 active' : 's2'}></div></button>
             </div>
@@ -181,6 +152,7 @@ function Header( props ) {
                         <p onClick={() => onPageX('/our-method')}>{selectLan ? 'Our method' : 'Nuestro método'}</p>
                     </div>
                 </div>
+                <Theme/>
                 <button className='L-btn' onClick={onBtnLan}><span className="material-icons-round">translate</span><p>{selectLan ? 'English' : 'Español'}</p></button>
             </div>
             <a className="whatsapp" href="https://wa.me/51953269019/?text=Hola%20quiero%20hacer%20un%20pedido" target="_blank" rel="noreferrer">

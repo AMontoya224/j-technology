@@ -10,6 +10,7 @@
     align-items: flex-start;
     top: 0;
     left: 0;
+    z-index: 2;
 }
 
 .Left > div > button{

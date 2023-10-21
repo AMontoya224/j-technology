@@ -34,7 +34,7 @@ function KnowUs( props ) {
 
         <section className='two' ref={testRef2} onMouseEnter={() => scrollSelect( '#2' )} onTouchStart={() => scrollSelect( '#2' )}>
           <p>{selectLan ? 'We are a family, and therefore we should feel the same or better than we do at home.' : 'Somos una familia, y por eso debemos sentirnos igual o mejor que en nuestro hogar.'}</p>
-          <h3>{selectLan ? 'Get to know ours:' : 'Conoce el nuestro:'}</h3>
+          <h2>{selectLan ? 'Get to know our family:' : 'Conoce a nuestra familia:'}</h2>
           <div>
             <div className='P-1'>
               <div className='P-2'>

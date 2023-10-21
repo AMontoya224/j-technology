@@ -1,0 +1,20 @@
+.Theme{
+    color: var(--color-white);
+    background: transparent;
+    cursor: pointer;
+    transition: all 350ms ease;
+}
+.Theme:hover{
+    opacity: 0.7;
+}
+
+.Theme > div{
+    width: 40%;
+}
+
+.Theme > span{
+    font-size: 3.5rem;
+    font-weight: 400;
+    color: var(--color-white);
+    vertical-align: middle;
+}

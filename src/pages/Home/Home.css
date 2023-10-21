@@ -31,25 +31,6 @@
     line-height: 8rem;
     animation: slide-right 750ms cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
-/*
-.Home > main > .one > div > h1{
-    text-align: left;
-    width: 52rem;
-    height: 9rem;
-    margin: 0.5rem 0;
-    animation: typing 2000ms steps(20), blink 350ms step-end, finish 2000;
-    white-space: nowrap;
-    overflow: hidden;
-    border-right: 3px solid;
-    font-family: 'Share Tech', sans-serif;
-    font-weight: 100;
-    line-height: 7rem;
-    font-size: 6em;
-}
-.Home > main > .one > div > h1:nth-child(2){
-    animation: typing 2000ms steps(20), blink 350ms step-end;
-}
-*/
 
 .Home > main > .one > div > p{
     text-align: left;
@@ -64,7 +45,7 @@
 .Home > main > .one > div > button{
     position: absolute;
     right: 1rem;
-    bottom: 1rem;
+    bottom: 2rem;
     color: var(--color-sucess);
     background: var(--color-white);
     font-size: 1.8rem;
@@ -122,17 +103,44 @@
 .Home > main > .two > div > div > div{
     display: flex;
     animation: slide 15s linear infinite;
-    gap: 40rem;
-    width: 320rem;
+    gap: 20rem;
+    width: 420rem; 
 }
 .Home > main > .two > div > div > div:hover{
     animation-play-state: paused;
 }
 
-.Home > main > .two > div > div > div > div > img{
-    width: 80rem;
+.Home > main > .two > div > div > div > div{
     height: 40rem;
-    border-radius: 1rem;
+    display: flex;
+    flex-direction: row;
+}
+
+.Home > main > .two > div > div > div > div > img{
+    height: 40rem;
+    width: 60%;
+    border-radius: 1rem 0 0 1rem;
+}
+
+.Home > main > .two > div > div > div > div > div{
+    background: var(--color-sucess);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+    padding: 3rem;
+    border-radius: 0 1rem 1rem 0;
+}
+
+.Home > main > .two > div > div > div > div > div > h3{
+    width: 100%;
+    font-size: 3rem;
+    color: var(--color-black);
+}
+
+.Home > main > .two > div > div > div > div > div > p{
+    width: 100%;
 }
 
 .Home > main > .three > div{
@@ -172,6 +180,10 @@
     flex-direction: column;
     justify-content: space-around;
     align-items: flex-start;
+}
+
+.Home > main > .four > div{
+    color: var(--color-sucess);
 }
 
 .Home > main > .four > div > form{

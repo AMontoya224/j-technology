@@ -21,7 +21,7 @@ function ServiceID( props ) {
         </section>
 
         <section className='two' ref={testRef2} onMouseEnter={() => scrollSelect( '#2' )} onTouchStart={() => scrollSelect( '#2' )}>
-          <h1>{selectLan ? `${service.title2En}` : `${service.title2}`}</h1>
+          <h2>{selectLan ? `${service.title2En}` : `${service.title2}`}</h2>
           <i>{selectLan ? `$ ${(service.price/3.99).toFixed(1)}` : `s/. ${service.price}`}</i>
           <p>{selectLan ? `${service.description2En}` : `${service.description2}`}</p>
           {selectLan ? 

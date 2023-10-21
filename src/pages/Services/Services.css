@@ -34,7 +34,7 @@
 }
 .Services > main > div:hover > img{
     transform: scale(1.4);
-    filter: brightness(0.2);
+    opacity: .2;
 }
 
 .Services > main > div > h4{
@@ -67,7 +67,7 @@
 }
 
 .ServiceID > main > section{
-    padding: 15rem 3.5rem 0 12rem;
+    padding: 15rem 3.5rem 0 12.5rem;
     height: 100vh;
     scroll-snap-align: start;
 }
@@ -106,6 +106,10 @@
     font-size: 2rem;
     margin: 0 auto;
     text-align: center;
+}
+
+.ServiceID > main > .two > h2{
+    font-size: 5rem;
 }
 
 .ServiceID > main > .two > i{

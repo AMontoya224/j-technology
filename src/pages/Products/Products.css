@@ -34,7 +34,7 @@
 }
 .Products > main > div:hover > img{
     transform: scale(1.4);
-    filter: brightness(0.2);
+    opacity: .2;
 }
 
 .Products > main > div > h4{
@@ -97,11 +97,17 @@
     height: 80vh;
 }
 
+.ProductID > main > .two{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
 .ProductID > main > .two > p{
     font-family: 'Londrina Outline', cursive;
-    background: rgb(78, 104, 196);
+    background: var(--color-primary);
     padding: 10vh 0 0 36vw;
-    color: rgb(38, 37, 37);
+    color: var(--color-letter);
     width: 100vw;
     height: 100vh;
     font-size: 35rem;
@@ -122,6 +128,10 @@
 .ProductID > main > .two > div{
     width: 50%;
     padding: 0 3rem;
+}
+
+.ProductID > main > .two > div > h1, .ProductID > main > .two > div > p, .ProductID > main > .two > div > h1, .ProductID > main > .two > div > div > i{
+    color: var(--color-letter-variant);
 }
 
 .ProductID > main > .two > div > div{
@@ -146,7 +156,7 @@
 }
 
 .ProductID > main > .two > div > p{
-    font-size: 2.5rem;
+    font-size: 2.2rem;
 }
 
 .ProductID > main > .three > nav{
@@ -169,9 +179,6 @@
 
 .ProductID-a{
     flex: 1;
-    color: var(--color-black);
-    font-size: 2rem;
-    font-weight: 400;
     padding: 1rem 0;
     transition: all 350ms ease;
     opacity: 0.7;
@@ -191,6 +198,12 @@
 }
 .ProductID-a.four{
     background: rgb(13, 105, 79);
+}
+
+.ProductID-a > h3{
+    color: var(--color-black);
+    font-size: 2rem;
+    font-weight: 400;
 }
 
 .ProductID-div{
@@ -254,7 +267,7 @@
 .ProductID > main > .four{
     padding-top: 12rem;
     flex-direction: column;
-    background: rgb(74, 73, 73);
+    background: var(--color-background-variant);
     text-align: center;
     width: 100%;
 }
