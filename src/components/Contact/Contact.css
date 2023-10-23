@@ -194,8 +194,24 @@
     .Contact > div > div{
         margin: 3rem 0rem;
     }
+
+    .Contact > div > .container{
+        border-radius: 2rem;
+        padding: 1rem;
+        margin: 2rem;
+    }
     
     .Contact > div > div > h1{
         font-size: 2.5rem;
+    }
+
+    .ContactProduct{
+        width: 90%;
+        padding: 1rem;
+    }
+
+    .ContactProduct > form > div > button{
+        margin-top: -1.4rem;
+        padding: 1rem 3rem;
     }
 }

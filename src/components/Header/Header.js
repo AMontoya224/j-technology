@@ -1,15 +1,13 @@
 import React, { useState } from 'react';
 import { withRouter } from 'react-router-dom';
 import './Header.css';
-import logo from './../../images/Logo2.png';
-import gorro from './../../images/gorro.png';
-import whatsapp from './../../images/whatsapp.png';
 import Theme from '../Theme/Theme';
 
 
 function Header( props ) {
     const { onSelectLeft, testRef1, selectLan, onSelectLan, selectHidden, data } = props;
     const [btnEsc, setBtnEsc] = useState( false );
+    const [theme, setTheme] = useState( true );
 
     const onBtnEsc = () => {
         if(!btnEsc){
@@ -53,8 +51,8 @@ function Header( props ) {
         <div className="Header">
             <div className={selectHidden ? 'Header-row bottom' : 'Header-row top'}>
                 {/*<p onClick={onHome} title='Home'><img src={logo} alt='logo'/>  J  T  <c>|</c><b>≡</b>C  H</p>*/}
-                <p onClick={onHome} title='Home'><img src={logo} alt='logo'/>  <b>J</b> - TECHNOLOGY</p>
-                <img src={gorro} alt='gorro'/>
+                <p onClick={onHome} title='Home'><img src={theme? require('../../images/Logo_J-T.png') : require('../../images/Logo_J-T_Black.png')} alt='logo'/>  <b>J</b> - TECHNOLOGY</p>
+                <img src={require('../../images/gorro.png')} alt='gorro'/>
                 <div> </div>
                 <div className='H-Services'>
                     <p onClick={() => onPage('/services')}>{selectLan ? 'Services ' : 'Servicios '}</p>
@@ -104,7 +102,7 @@ function Header( props ) {
                         <p onClick={() => onPage('/about-us')}>{selectLan ? 'All our information...' : 'Toda nuestra información...'}</p>
                     </div>
                 </div>
-                <Theme/>
+                <Theme setTheme={setTheme} selectLan={selectLan}/>
                 <button className='L-btn' onClick={onBtnLan}><span className="material-icons-round">translate</span><p>{selectLan ? 'English' : 'Español'}</p></button>
                 <button className='H-btn' onClick={onBtnEsc}><div className={btnEsc ? 's1 active' : 's1'}></div><div className={btnEsc ? 's2 active' : 's2'}></div></button>
             </div>
@@ -152,11 +150,11 @@ function Header( props ) {
                         <p onClick={() => onPageX('/our-method')}>{selectLan ? 'Our method' : 'Nuestro método'}</p>
                     </div>
                 </div>
-                <Theme/>
+                <Theme setTheme={setTheme} selectLan={selectLan}/>
                 <button className='L-btn' onClick={onBtnLan}><span className="material-icons-round">translate</span><p>{selectLan ? 'English' : 'Español'}</p></button>
             </div>
             <a className="whatsapp" href="https://wa.me/51953269019/?text=Hola%20quiero%20hacer%20un%20pedido" target="_blank" rel="noreferrer">
-                <img src={whatsapp} alt='whatsapp'/>
+                <img src={require('../../images/whatsapp.png')} alt='whatsapp'/>
             </a>
         </div>
     );

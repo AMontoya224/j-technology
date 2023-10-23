@@ -280,10 +280,23 @@
 @media only screen and (max-width: 960px){
     .Products{
         padding: 0;
+        margin: 1rem;
+    }
+
+    .Products > h2{
+        margin: 13rem 2rem 2rem 2rem;
+    }
+
+    .Products > main{
+        margin: 0 2rem;
     }
 
     .Products > main > div{
-        margin: 2rem 0;
+        margin: 1rem 0;
+    }
+
+    .Products > main > div{
+        width: 100%;
     }
 
     .Products > div > Footer{
@@ -322,47 +335,55 @@
         width: 70vw;
     }
 
-    .ProductID > main > .two > p{
-        padding: 20vh 0 0 7vw;
+    .ProductID > main > .two{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
     }
     
     .ProductID > main > .two > img{
-        width: 30rem;
+        display: none;
     }
-
+    
     .ProductID > main > .two > div{
-        margin-bottom: 5rem;
+        width: 100%;
+        padding: 0 3rem;
     }
-
+    
     .ProductID > main > .three > nav > ul > li{
-        width: 40vh;
+        width: 90vw;
     }
-
-    .ProductID > main > .three > nav > ul > li > a{
-        width: 1vh;
-        color: transparent;
-        font-size: 2rem;
-        width: 10vw;
-        padding: 1rem;
+    
+    .ProductID-a > h3{
+        font-size: 1.2rem;
     }
-
-    .ProductID > main > .three > nav > ul > li > a.active{
-        color: var(--color-black);
-        font-size: 2rem;
-        width: 75vh;
-        padding: 1rem;
-    }
-
+    
     .ProductID-div{
-        height: 68vh;
+        height: 65vh;
     }
 
-    .ProductID > main > .four > p{
-        font-size: 4rem;
+    .ProductID-div.one{
+        padding: 10rem 5rem;
+    }
+    
+    .ProductID-div.one > p{
+        font-size: 2rem;
     }
 
-    .ProductID > main > .four > img{
-        width: 12rem;
+    .ProductID-div.two{
+        overflow: scroll;
+    }
+    
+    .ProductID-div.two > ul{
+        list-style: decimal;
+    }
+    
+    .ProductID-div.two > ul > li{
+        margin: 1rem 0;
+    }
+    
+    .ProductID > main > .four{
+        padding-top: 10rem;
     }
 
     .ProductID > main > .four > Footer{

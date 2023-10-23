@@ -168,27 +168,40 @@
         height: 20vh;
     }
 
+    .ServiceID > main > section{
+        padding: 15rem 1.5rem 0 1.5rem;
+    }
+
     .ServiceID > main > .one > h1{
         font-size: 4rem;
-        transform: translate(-35%, -50%);
+        margin-bottom: 3rem;
     }
 
     .ServiceID > main > .two{
-        height: 200vh;
-        padding: 25rem 2rem 0 2rem;
+        padding-top: 10rem;
     }
     
-    .ServiceID > main > .two > h1{
-        font-size: 5rem;
+    .ServiceID > main > .two > h2{
+        font-size: 3rem;
+        margin-bottom: 1rem;
     }
 
-    .ServiceID > main > .two > ul{
-        margin-left: 2rem;
+    .ServiceID > main > .two > p{
+        font-size: 1.8rem;
+        margin-top: 2rem;
+    }
+
+    .ServiceID > main > .two > i{
+        font-size: 1.5rem;
+    }
+
+    .ServiceID > main > .two > ul > li{
+        font-size: 1.6rem;
+        margin: .7rem;
     }
 
     .ServiceID > main > .four{
-        padding: 15rem 2rem 0 2rem;
-        height: 70vh;
+        padding: 10rem 1.5rem 0 1.5rem;
         width: 100%;
     }
     

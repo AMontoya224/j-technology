@@ -52,28 +52,40 @@ function KnowUs( props ) {
               <div className={(selectPhoto === '#1' ) ? 'information' : 'not-information'}>
                 <h3>{selectLan ? 'Eng. Jarelh Galdos' : 'Ing. Jarelh Galdos'}</h3>
                 <b>{selectLan ? 'Director of Finance and Information' : 'Director de Finanzas e Información'}</b>
-                <i>{selectLan ? 'Phrase...' : 'Frase...'}</i>
-                <p>{selectLan ? 'Decription...' : 'Decripción...'}</p>
+                <p>{selectLan ? "Bachelor's Degree in Electronic Engineering from Universidad Nacional de San Agustín" : 'Bachiller en Ingenieria Electrónica de Universidad Nacional de San Agustín'}</p>
                 <div>
-                  redes: ...
+                  <a className="pagina" href='https://www.linkedin.com/in/jarelh-galdos-barrios-4145b7179/' target="_blank" rel="noreferrer">
+                    <img src={require('./../../images/linkedin.png')} alt='Linkedin' title='Linkedin'/>
+                  </a>
+                  <a href="mailto:jgaldosb@unsa.edu.pe?subject=Quiero contactar contigo Jarelh">
+                  <img src={require('./../../images/mail.png')} alt='Mail' title='Mail'/>
+                  </a>
                 </div>
               </div>
               <div className={(selectPhoto === '#2' ) ? 'information' : 'not-information'}>
-                <h3>{selectLan ? 'Eng. Juan Perez' : 'Ing. Juan Andaluz'}</h3>
+                <h3>{selectLan ? 'Eng. Juan Perez' : 'Ing. Italo Andaluz'}</h3>
                 <b>{selectLan ? 'Marketing and Technology Director' : 'Director de Marketing y Tecnología'}</b>
-                <i>{selectLan ? 'Technology is the future of humanity' : 'La tecnología es el futuro de la humanidad'}</i>
-                <p>{selectLan ? 'Decription...' : 'Decripción...'}</p>
+                <p>{selectLan ? 'Technology is the future of humanity' : 'La tecnología es el futuro de la humanidad'}</p>
                 <div>
-                  LinkedIn, CV
+                  <a className="pagina" href='https://www.linkedin.com/in/italo-andaluz-huarsaya-5712071a7/' target="_blank" rel="noreferrer">
+                    <img src={require('./../../images/linkedin.png')} alt='Linkedin' title='Linkedin'/>
+                  </a>
+                  <a href="mailto:italoandaluz@gmail.com?subject=Quiero contactar contigo Italo">
+                  <img src={require('./../../images/mail.png')} alt='Mail' title='Mail'/>
+                  </a>
                 </div>
               </div>
               <div className={(selectPhoto === '#3' ) ? 'information' : 'not-information'}>
                 <h3>{selectLan ? 'Eng. Joseph Guevara' : 'Ing. Joseph Guevara'}</h3>
                 <b>{selectLan ? 'Director of Communications and Operations' : 'Director de Comunicaciones y Operaciones'}</b>
-                <i>{selectLan ? 'Phrase...' : 'Frase...'}</i>
-                <p>{selectLan ? 'Decription...' : 'Decripción...'}</p>
+                <p>{selectLan ? 'Robotics Researcher | Electronic Engineer specialized in DCS and SCADA Systems | Industrial and Mining Safety Engineer | Industrial and Mining Safety Engineer' : 'Investigador Robótico | Ingeniero Electrónico especialista en Sistemas DCS y SCADA | Ingeniero de Seguridad Industrial y Minera'}</p>
                 <div>
-                  redes
+                  <a className="pagina" href='https://www.linkedin.com/in/joseph-guevaram/' target="_blank" rel="noreferrer">
+                    <img src={require('./../../images/linkedin.png')} alt='Linkedin' title='Linkedin'/>
+                  </a>
+                  <a href="mailto:jguevaram@unsa.edu.pe?subject=Quiero contactar contigo Joseph">
+                  <img src={require('./../../images/mail.png')} alt='Mail' title='Mail'/>
+                  </a>
                 </div>
               </div>
             </div>

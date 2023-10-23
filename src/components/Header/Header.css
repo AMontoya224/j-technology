@@ -253,8 +253,14 @@
 }
 
 .menu > .L-btn{
+    margin-top: 3rem;
     background: transparent;
-    color: white;
+    color: var(--color-white);
+    cursor: pointer;
+    transition: all 350ms ease;
+}
+.menu > .L-btn:hover{
+    opacity: 0.7;
 }
 
 .menu{
@@ -390,14 +396,10 @@
         padding: 2rem 1.5rem;
     }
 
-    .Header-row > .H-About{
+    .Header-row > .H-About, .Header-row > .L-btn, .Header-row > .Theme{
         display: none;
     }
-
-    .Header-row > .L-btn{
-        display: none;
-    }
-
+    
     .Header-row > p{
         font-size: 2rem;
         flex: 10;
@@ -409,6 +411,11 @@
 
     .menu > div{
         display: inline-block;
+        cursor: pointer;
+        transition: all 350ms ease;
+    }
+    .menu > div:hover{
+        opacity: .7;
     }
 
     .menu-p{
@@ -417,11 +424,7 @@
 }
 
 @media only screen and (max-width: 600px){
-    .Header-row > .H-Products{
-        display: none;
-    }
-
-    .Header-row > .H-Services{
+    .Header-row > .H-Products, .Header-row > .H-Services{
         display: none;
     }
 
